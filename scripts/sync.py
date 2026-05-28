@@ -78,29 +78,37 @@ def gql(query: str, variables: dict | None = None) -> dict[str, Any]:
             print(f"  ! HTTP {resp.status_code}, retrying in {wait}s")
             time.sleep(wait)
             continue
-        resp.raise_for_status()
+        # On any error, surface Swapcard's actual message — a 400 on GraphQL
+        # almost always carries a precise "field X doesn't exist" explanation.
+        if not resp.ok:
+            print(f"\n!! HTTP {resp.status_code} from Swapcard. Response body:")
+            print(resp.text[:4000])
+            resp.raise_for_status()
         data = resp.json()
         if "errors" in data:
-            raise RuntimeError(f"GraphQL errors: {json.dumps(data['errors'], indent=2)}")
+            raise RuntimeError(
+                "GraphQL errors:\n" + json.dumps(data["errors"], indent=2)
+            )
         return data["data"]
     raise RuntimeError("Exhausted retries on Swapcard API")
 
 
-# ---------- Discovery (run once to verify config) ----------
+# ---------- Discovery (optional: lists field definitions & confirms config) ----------
 
 DISCOVER_QUERY = """
 query Discover($eventId: ID!) {
   event(id: $eventId) {
     id
     title
-    groups {
-      id
-      name
-    }
-    peopleFields: customFields(type: EVENT_PERSON) {
-      id
-      name
-      kind
+    fieldDefinitions(target: PEOPLE) {
+      __typename
+      ... on SelectFieldDefinition { id name }
+      ... on MultipleSelectFieldDefinition { id name }
+      ... on TextFieldDefinition { id name }
+      ... on LongTextFieldDefinition { id name }
+      ... on NumberFieldDefinition { id name }
+      ... on UrlFieldDefinition { id name }
+      ... on MediaFieldDefinition { id name }
     }
   }
 }
@@ -108,46 +116,51 @@ query Discover($eventId: ID!) {
 
 
 def discover() -> None:
-    """Print groups and custom fields so the user can verify config."""
+    """Print custom field definitions so the user can verify the industry field."""
     print(f"Connecting to {API_URL} for event {EVENT_ID}...")
     data = gql(DISCOVER_QUERY, {"eventId": EVENT_ID})
     event = data["event"]
-    print(f"\nEvent: {event['title']} ({event['id']})\n")
+    print(f"\nEvent: {event.get('title')} ({event.get('id')})\n")
 
-    print("=== Groups ===")
-    for g in event["groups"]:
-        in_target = "  ← TARGET" if g["name"] in TARGET_GROUPS else ""
-        print(f"  {g['id']}  {g['name']}{in_target}")
-
-    print("\n=== Custom fields on EventPerson ===")
-    for f in event["peopleFields"]:
-        in_target = "  ← INDUSTRY" if f["name"] == INDUSTRY_FIELD_NAME else ""
-        print(f"  {f['id']}  [{f['kind']}]  {f['name']}{in_target}")
+    print("=== Custom fields on People ===")
+    for f in event.get("fieldDefinitions") or []:
+        name = f.get("name")
+        mark = "  ← INDUSTRY" if name == INDUSTRY_FIELD_NAME else ""
+        print(f"  [{f.get('__typename')}]  {name}{mark}")
 
     print(
-        "\nIf the TARGET groups or INDUSTRY field aren't marked above, "
-        "set TARGET_GROUPS / INDUSTRY_FIELD_NAME env vars to match exactly."
+        "\nGroups are read per-person from the people query, so they're not "
+        "listed here. If the INDUSTRY field isn't marked above, set "
+        "INDUSTRY_FIELD_NAME to match one of the names shown."
     )
 
 
 # ---------- People extraction ----------
 
-# NOTE: Swapcard's exact field shape may need a small tweak depending on your
-# event's custom field types. If this query errors, run --discover and tell me
-# what `kind` your industry field is and we'll adjust the inline fragments.
+# Rooted at eventPerson with cursor pagination (Swapcard's documented shape).
+# Group membership comes back on each person, so we filter by group NAME in
+# Python rather than resolving group IDs. Custom field values live under
+# withEvent(eventId).fields; we read SELECT / MULTI-SELECT industry values.
 PEOPLE_QUERY = """
-query People($eventId: ID!, $groupIds: [ID!], $cursor: String) {
-  event(id: $eventId) {
-    people(first: 100, after: $cursor, groupIds: $groupIds) {
-      pageInfo { hasNextPage endCursor }
-      nodes {
-        id
-        organization
+query People($eventId: ID!, $cursor: CursorPaginationInput) {
+  eventPerson(eventId: $eventId, cursor: $cursor) {
+    pageInfo { hasNextPage endCursor }
+    totalCount
+    nodes {
+      id
+      organization
+      groups { id name }
+      withEvent(eventId: $eventId) {
         fields {
-          definition { id name kind }
-          ... on EventPersonCustomFieldText { textValue: value }
-          ... on EventPersonCustomFieldSingleSelect { singleValue: value }
-          ... on EventPersonCustomFieldMultiSelect { multiValues: values }
+          __typename
+          ... on SelectField {
+            translations { value language }
+            definition { id translations { name language } }
+          }
+          ... on MultipleSelectField {
+            translations { value language }
+            definition { id translations { name language } }
+          }
         }
       }
     }
@@ -156,51 +169,92 @@ query People($eventId: ID!, $groupIds: [ID!], $cursor: String) {
 """
 
 
-def resolve_group_ids(target_names: list[str]) -> list[str]:
-    data = gql(DISCOVER_QUERY, {"eventId": EVENT_ID})
-    by_name = {g["name"]: g["id"] for g in data["event"]["groups"]}
-    missing = [n for n in target_names if n not in by_name]
-    if missing:
-        sys.exit(
-            f"ERROR: target group(s) not found in event: {missing}\n"
-            f"Available: {list(by_name)}"
-        )
-    ids = [by_name[n] for n in target_names]
-    print(f"Resolved {len(ids)} target groups: {target_names}")
-    return ids
+def _def_name(field: dict) -> str:
+    """Get a custom field's name from its (possibly translated) definition."""
+    definition = field.get("definition") or {}
+    translations = definition.get("translations") or []
+    # Prefer English, else the first available translation.
+    en = next((t for t in translations if t.get("language") == "en"), None)
+    chosen = en or (translations[0] if translations else None)
+    return (chosen or {}).get("name", "") or ""
 
 
-def extract_industry(fields: list[dict]) -> list[str]:
-    """Pull industry value(s) from a person's custom fields."""
-    for f in fields:
-        if (f.get("definition") or {}).get("name") != INDUSTRY_FIELD_NAME:
-            continue
-        if "multiValues" in f and f["multiValues"]:
-            return [v for v in f["multiValues"] if v]
-        if "singleValue" in f and f["singleValue"]:
-            return [f["singleValue"]]
-        if "textValue" in f and f["textValue"]:
-            return [f["textValue"]]
-    return []
+def _field_values(field: dict) -> list[str]:
+    """Get the selected value(s) of a select/multi-select custom field."""
+    translations = field.get("translations") or []
+    en = [t["value"] for t in translations if t.get("language") == "en" and t.get("value")]
+    if en:
+        return en
+    return [t["value"] for t in translations if t.get("value")]
 
 
-def fetch_all_people(group_ids: list[str]) -> list[dict]:
-    people = []
-    cursor = None
+def extract_industry(person_with_event: dict | None) -> list[str]:
+    """Pull industry value(s) from a person's event-specific custom fields."""
+    if not person_with_event:
+        return []
+    out: list[str] = []
+    for f in person_with_event.get("fields") or []:
+        if _def_name(f).strip().lower() == INDUSTRY_FIELD_NAME.strip().lower():
+            out.extend(_field_values(f))
+    # De-dupe, preserve order
+    seen, result = set(), []
+    for v in out:
+        if v not in seen:
+            seen.add(v)
+            result.append(v)
+    return result
+
+
+def person_groups(node: dict) -> list[str]:
+    return [g.get("name", "") for g in (node.get("groups") or [])]
+
+
+def fetch_all_people() -> list[dict]:
+    """Page through every person; filter to target groups in Python."""
+    target = {g.lower() for g in TARGET_GROUPS}
+    kept: list[dict] = []
+    seen_field_types: set[str] = set()
+    seen_field_names: set[str] = set()
+    cursor_after = None
     page = 0
+    total_scanned = 0
+
     while True:
         page += 1
-        data = gql(
-            PEOPLE_QUERY,
-            {"eventId": EVENT_ID, "groupIds": group_ids, "cursor": cursor},
-        )
-        block = data["event"]["people"]
-        people.extend(block["nodes"])
-        print(f"  page {page}: +{len(block['nodes'])} (total {len(people)})")
+        cursor = {"first": 100}
+        if cursor_after:
+            cursor["after"] = cursor_after
+        data = gql(PEOPLE_QUERY, {"eventId": EVENT_ID, "cursor": cursor})
+        block = data["eventPerson"]
+        nodes = block["nodes"]
+        total_scanned += len(nodes)
+
+        for node in nodes:
+            # Collect diagnostics so the log tells us the real field names/types
+            we = node.get("withEvent") or {}
+            for f in we.get("fields") or []:
+                seen_field_types.add(f.get("__typename", "?"))
+                nm = _def_name(f)
+                if nm:
+                    seen_field_names.add(nm)
+            # Keep people in any target group
+            if target & {g.lower() for g in person_groups(node)}:
+                kept.append(node)
+
+        print(f"  page {page}: scanned {len(nodes)} (kept {len(kept)} so far)")
         if not block["pageInfo"]["hasNextPage"]:
             break
-        cursor = block["pageInfo"]["endCursor"]
-    return people
+        cursor_after = block["pageInfo"]["endCursor"]
+
+    print(f"Scanned {total_scanned} people total; kept {len(kept)} in target groups.")
+    print(f"Custom field types seen on People: {sorted(seen_field_types) or 'none'}")
+    print(f"Custom field names seen on People: {sorted(seen_field_names) or 'none'}")
+    if INDUSTRY_FIELD_NAME not in seen_field_names:
+        print(
+            f"  ! WARNING: industry field {INDUSTRY_FIELD_NAME!r} not seen. "
+            f"Industries may come back empty — check the names listed above."
+        )
+    return kept
 
 
 # ---------- Company normalization & Fortune 500 matching ----------
@@ -248,7 +302,7 @@ def main() -> None:
     parser.add_argument(
         "--discover",
         action="store_true",
-        help="list groups and custom fields, then exit",
+        help="list People custom field definitions, then exit",
     )
     args = parser.parse_args()
 
@@ -259,11 +313,9 @@ def main() -> None:
     print(f"Target groups: {TARGET_GROUPS}")
     print(f"Industry field: {INDUSTRY_FIELD_NAME!r}")
 
-    group_ids = resolve_group_ids(TARGET_GROUPS)
-
     print("\nFetching people...")
-    people = fetch_all_people(group_ids)
-    print(f"Total people: {len(people)}")
+    people = fetch_all_people()
+    print(f"People in target groups: {len(people)}")
 
     aliases = load_aliases()
     fortune500 = load_fortune500()
@@ -279,7 +331,7 @@ def main() -> None:
         if not key:
             continue
 
-        industries = extract_industry(p.get("fields") or [])
+        industries = extract_industry(p.get("withEvent"))
 
         bucket = companies.setdefault(
             key,
