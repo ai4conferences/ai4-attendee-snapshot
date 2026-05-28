@@ -15,8 +15,7 @@
 
 <div id="ai4-snapshot" data-state="loading">
   <div class="ai4-toolbar">
-    <button class="ai4-filter is-active" data-industry="__all__">All</button>
-    <!-- industry buttons inserted by JS -->
+    <!-- industry buttons inserted by JS — first one becomes the active default -->
   </div>
 
   <div class="ai4-meta">
@@ -135,7 +134,7 @@
 (function () {
   // === CONFIG ===
   const SNAPSHOT_URL =
-    "https://cdn.jsdelivr.net/gh/YOUR_GH_USER/YOUR_REPO@main/output/snapshot.json";
+    "https://cdn.jsdelivr.net/gh/ai4conferences/ai4-attendee-snapshot@main/output/snapshot.json";
 
   const root = document.getElementById("ai4-snapshot");
   if (!root) return;
@@ -149,7 +148,7 @@
   const updatedEl = root.querySelector(".ai4-updated");
 
   let snapshot = null;
-  let activeIndustry = "__all__";
+  let activeIndustry = null;  // set to first available bucket once data loads
 
   function fmtDate(iso) {
     try {
@@ -164,7 +163,7 @@
     if (!snapshot) return;
 
     const matches = (c) =>
-      activeIndustry === "__all__" ||
+      activeIndustry !== null &&
       (c.industries || []).includes(activeIndustry);
 
     const filtered = snapshot.companies.filter(matches);
@@ -195,22 +194,23 @@
     otherEl.hidden = other.length === 0;
 
     countEl.textContent =
-      `${filtered.length.toLocaleString()} companies` +
-      (activeIndustry === "__all__"
-        ? ""
-        : ` in ${activeIndustry}`);
+      activeIndustry === null
+        ? "0 companies"
+        : `${filtered.length.toLocaleString()} companies in ${activeIndustry}`;
   }
 
   function buildIndustryButtons(industries) {
     const frag = document.createDocumentFragment();
-    for (const name of industries) {
+    industries.forEach((name, i) => {
       const btn = document.createElement("button");
-      btn.className = "ai4-filter";
+      btn.className = "ai4-filter" + (i === 0 ? " is-active" : "");
       btn.dataset.industry = name;
       btn.textContent = name;
       frag.appendChild(btn);
-    }
+    });
     toolbar.appendChild(frag);
+    // Default selection: the first industry (matches the first button's active state)
+    activeIndustry = industries.length ? industries[0] : null;
   }
 
   toolbar.addEventListener("click", (e) => {
