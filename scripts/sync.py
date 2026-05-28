@@ -41,14 +41,21 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 OUTPUT_PATH = ROOT / "output" / "snapshot.json"
 
-API_URL = os.environ.get("SWAPCARD_API_URL", "https://api.swapcard.com/graphql")
+# NOTE: `or` (not the dict .get default) so that an env var that is SET BUT
+# EMPTY — which is what an undefined GitHub `vars.X` expands to — still falls
+# back to the default instead of becoming "".
+API_URL = (
+    os.environ.get("SWAPCARD_API_URL")
+    or "https://developer.swapcard.com/event-admin/graphql"
+)
 API_KEY = os.environ.get("SWAPCARD_API_KEY")
 EVENT_ID = os.environ.get("SWAPCARD_EVENT_ID")
-INDUSTRY_FIELD_NAME = os.environ.get("INDUSTRY_FIELD_NAME", "Industry")
+INDUSTRY_FIELD_NAME = os.environ.get("INDUSTRY_FIELD_NAME") or "Industry"
 TARGET_GROUPS = [
     g.strip()
-    for g in os.environ.get(
-        "TARGET_GROUPS", "Attendees,Speakers,Press,Speaker | Press"
+    for g in (
+        os.environ.get("TARGET_GROUPS")
+        or "Attendees,Speakers,Press,Speaker | Press"
     ).split(",")
     if g.strip()
 ]
