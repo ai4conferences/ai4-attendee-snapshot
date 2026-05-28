@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-28T23:05:17+00:00",
-  "total_companies": 3408,
-  "total_attendees": 5794,
+  "updated_at": "2026-05-28T23:10:08+00:00",
+  "total_companies": 3409,
+  "total_attendees": 5795,
   "industries": [
     "All Industries",
     "Automotive",
@@ -19515,6 +19515,14 @@
       "name": "Providence Enterprises",
       "industries": [
         "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "PROVIDENCE HEALTH & SERVICES (Providence Health Plan)",
+      "industries": [
+        "Healthcare"
       ],
       "fortune500": false,
       "attendee_count": 1
