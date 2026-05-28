@@ -161,6 +161,10 @@ query People($eventId: ID!, $cursor: CursorPaginationInput) {
             translations { value language }
             definition { id translations { name language } }
           }
+          ... on NumberField {
+            numValue: value
+            definition { id translations { name language } }
+          }
         }
       }
     }
@@ -189,7 +193,7 @@ def _field_values(field: dict) -> list[str]:
 
 
 def extract_industry(person_with_event: dict | None) -> list[str]:
-    """Pull industry value(s) from a person's event-specific custom fields."""
+    """Pull raw industry value(s) from a person's event-specific custom fields."""
     if not person_with_event:
         return []
     out: list[str] = []
@@ -203,6 +207,49 @@ def extract_industry(person_with_event: dict | None) -> list[str]:
             seen.add(v)
             result.append(v)
     return result
+
+
+# Parse Swapcard Company Size values like "11-50", "1001-5000", "10000+", or
+# a plain number, returning the UPPER bound. Used to decide if a company
+# qualifies as a Startup. Conservative: "201-500" → 500 (doesn't qualify under
+# a 250 threshold) even though it contains some <250 companies.
+SIZE_PLUS_RE = re.compile(r"^\s*(\d+)\s*\+\s*$")
+SIZE_RANGE_RE = re.compile(r"^\s*(\d+)\s*[-\u2013\u2014]\s*(\d+)\s*$")
+SIZE_PLAIN_RE = re.compile(r"^\s*(\d+)\s*$")
+
+
+def parse_company_size_upper(raw: str | None) -> int | None:
+    if not raw:
+        return None
+    s = str(raw).strip()
+    if not s:
+        return None
+    m = SIZE_PLUS_RE.match(s)
+    if m:
+        return 10**9  # effectively unbounded
+    m = SIZE_RANGE_RE.match(s)
+    if m:
+        return int(m.group(2))
+    m = SIZE_PLAIN_RE.match(s)
+    if m:
+        return int(m.group(1))
+    return None
+
+
+def extract_company_size(person_with_event: dict | None) -> str | None:
+    """Return the raw Company Size value (e.g. '11-50') or None."""
+    if not person_with_event:
+        return None
+    for f in person_with_event.get("fields") or []:
+        if _def_name(f).strip().lower() != "company size":
+            continue
+        vals = _field_values(f)
+        if vals:
+            return vals[0]
+        # NumberField fallback
+        if f.get("numValue") is not None:
+            return str(f["numValue"])
+    return None
 
 
 def person_groups(node: dict) -> list[str]:
@@ -278,21 +325,111 @@ def normalize(name: str) -> str:
     return n
 
 
-def load_fortune500() -> set[str]:
+def compact_key(name: str) -> str:
+    """Stricter key for auto-merge: normalized + all whitespace removed.
+    Collapses 'JP Morgan', 'J.P. Morgan', and 'JPMorgan' onto 'jpmorgan'.
+    Leaves longer names like 'JPMorgan Chase' separate (-> 'jpmorganchase')."""
+    return re.sub(r"\s+", "", normalize(name))
+
+
+def load_fortune500_index() -> dict:
+    """Build a search index for fuzzy Fortune 500 matching.
+
+    Matches if EITHER:
+      1) Compact keys are identical ('JP Morgan' == 'J.P. Morgan' == 'JPMorgan'), OR
+      2) One name's tokens are a subset of the other's, in either direction.
+         So 'JPMorgan' matches F500 'JPMorgan Chase' ({jpmorgan} ⊆ {jpmorgan, chase})
+         and 'JPMorgan Chase & Co.' also matches ({jpmorgan, chase} ⊆ {jpmorgan, chase}).
+
+    Tokens shorter than 3 chars are dropped to avoid pathological matches.
+    """
     path = DATA_DIR / "fortune500.json"
     if not path.exists():
         print("! data/fortune500.json missing — no Fortune 500 tagging will happen")
-        return set()
+        return {"compact_keys": set(), "token_sets": []}
     names = json.loads(path.read_text())
-    return {normalize(n) for n in names}
+    compact_keys: set[str] = set()
+    token_sets: list[tuple[str, frozenset[str]]] = []
+    for raw in names:
+        if not isinstance(raw, str):
+            continue
+        ck = compact_key(raw)
+        if ck:
+            compact_keys.add(ck)
+        toks = frozenset(t for t in normalize(raw).split() if len(t) > 2)
+        if toks:
+            token_sets.append((raw, toks))
+    return {"compact_keys": compact_keys, "token_sets": token_sets}
+
+
+def is_fortune500(name: str, index: dict) -> bool:
+    """Check whether a company matches any F500 entry (exact compact OR token-subset)."""
+    ck = compact_key(name)
+    if not ck:
+        return False
+    if ck in index["compact_keys"]:
+        return True
+    company_tokens = frozenset(t for t in normalize(name).split() if len(t) > 2)
+    if not company_tokens:
+        return False
+    for _f500_name, f500_tokens in index["token_sets"]:
+        if not f500_tokens:
+            continue
+        # Bidirectional subset: catches both shorter ("JPMorgan" → "JPMorgan Chase")
+        # and longer ("JPMorgan Chase & Co." → "JPMorgan Chase") variants
+        if company_tokens <= f500_tokens or f500_tokens <= company_tokens:
+            return True
+    return False
 
 
 def load_aliases() -> dict[str, str]:
-    """Map of raw Swapcard org name -> canonical display name (optional)."""
+    """Map of raw Swapcard org name -> canonical display name. Case-insensitive lookup."""
     path = DATA_DIR / "name_aliases.json"
     if not path.exists():
         return {}
-    return json.loads(path.read_text())
+    raw = json.loads(path.read_text())
+    out: dict[str, str] = {}
+    for k, v in raw.items():
+        if not isinstance(k, str) or not isinstance(v, str):
+            continue
+        if k.startswith("_"):  # comment keys
+            continue
+        out[k.strip().lower()] = v
+    return out
+
+
+def load_industry_buckets() -> tuple[dict[str, str | None], list[str], int]:
+    """Load bucket mapping, ordered bucket list, and startup size threshold."""
+    path = DATA_DIR / "industry_buckets.json"
+    if not path.exists():
+        print("! data/industry_buckets.json missing — using raw Swapcard industries")
+        return ({}, [], 0)
+    config = json.loads(path.read_text())
+    mappings = config.get("mappings") or {}
+    order = config.get("bucket_order") or []
+    startup_max = int(config.get("startup_max_size") or 0)
+    # Case-insensitive lookup table
+    mappings_ci = {k.strip().lower(): v for k, v in mappings.items()}
+    return (mappings_ci, order, startup_max)
+
+
+def apply_buckets(
+    raw_industries: list[str],
+    bucket_map: dict[str, str | None],
+    seen_unmapped: set[str],
+) -> set[str]:
+    """Map raw Swapcard industries to display buckets. Unknown values -> 'Other'."""
+    out: set[str] = set()
+    for raw in raw_industries:
+        key = raw.strip().lower()
+        if key in bucket_map:
+            bucket = bucket_map[key]
+            if bucket:  # None means "no specific bucket"
+                out.add(bucket)
+        else:
+            seen_unmapped.add(raw)
+            out.add("Other")
+    return out
 
 
 # ---------- Main ----------
@@ -318,41 +455,70 @@ def main() -> None:
     print(f"People in target groups: {len(people)}")
 
     aliases = load_aliases()
-    fortune500 = load_fortune500()
+    fortune500_index = load_fortune500_index()
+    bucket_map, bucket_order, startup_max = load_industry_buckets()
+    seen_unmapped: set[str] = set()
+    size_value_counts: dict[str, int] = {}
 
-    # Aggregate: company name -> set of industries
+    # Aggregate by compact_key: 'JP Morgan', 'J.P. Morgan', 'JPMorgan' all merge.
     companies: dict[str, dict] = {}
     for p in people:
         raw_org = (p.get("organization") or "").strip()
         if not raw_org:
             continue
-        display = aliases.get(raw_org, raw_org)
-        key = normalize(display)
+        display = aliases.get(raw_org.strip().lower(), raw_org)
+        key = compact_key(display)
         if not key:
             continue
 
-        industries = extract_industry(p.get("withEvent"))
+        raw_industries = extract_industry(p.get("withEvent"))
+        buckets = (
+            apply_buckets(raw_industries, bucket_map, seen_unmapped)
+            if bucket_map else set(raw_industries)
+        )
+
+        # Company Size → Startups bucket (in addition to industry buckets)
+        size = extract_company_size(p.get("withEvent"))
+        if size:
+            size_value_counts[size] = size_value_counts.get(size, 0) + 1
+            upper = parse_company_size_upper(size)
+            if startup_max and upper is not None and upper < startup_max:
+                buckets.add("Startups")
 
         bucket = companies.setdefault(
             key,
             {
                 "name": display,
                 "industries": set(),
-                "fortune500": key in fortune500,
+                "fortune500": is_fortune500(display, fortune500_index),
                 "_count": 0,
+                "_size_votes": {},  # raw size -> count, for tie-breaking
             },
         )
-        bucket["industries"].update(industries)
+        bucket["industries"].update(buckets)
         bucket["_count"] += 1
+        if size:
+            bucket["_size_votes"][size] = bucket["_size_votes"].get(size, 0) + 1
         # Prefer the longest display variant (often the most complete one)
         if len(display) > len(bucket["name"]):
             bucket["name"] = display
 
-    # Build sorted output
-    industry_set: set[str] = set()
+    # Second-pass startup tagging: if MOST attendees from a company report a
+    # small size, tag the company as Startup even if some individuals didn't
+    # fill in the field. Uses the modal (most common) size.
+    if startup_max:
+        for c in companies.values():
+            votes = c.get("_size_votes") or {}
+            if not votes:
+                continue
+            modal_size = max(votes.items(), key=lambda kv: kv[1])[0]
+            upper = parse_company_size_upper(modal_size)
+            if upper is not None and upper < startup_max:
+                c["industries"].add("Startups")
+
+    # Build company list (alphabetical by name)
     out_companies = []
     for c in companies.values():
-        industry_set.update(c["industries"])
         out_companies.append(
             {
                 "name": c["name"],
@@ -361,24 +527,166 @@ def main() -> None:
                 "attendee_count": c["_count"],
             }
         )
-
-    # Alphabetical (case-insensitive); frontend handles F500-first display.
     out_companies.sort(key=lambda c: c["name"].lower())
+
+    # Industries list: use the configured bucket order (so the page always shows
+    # the same 13 buttons in the same order). Filter to only buckets that have
+    # at least one company — empty buttons just clutter the UI.
+    present = {ind for c in out_companies for ind in c["industries"]}
+    if bucket_order:
+        industries_out = [b for b in bucket_order if b in present]
+        # Any present industry not in bucket_order (shouldn't happen, but safe)
+        extras = sorted(present - set(bucket_order))
+        industries_out.extend(extras)
+    else:
+        industries_out = sorted(present)
 
     snapshot = {
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "total_companies": len(out_companies),
         "total_attendees": sum(c["attendee_count"] for c in out_companies),
-        "industries": sorted(industry_set),
+        "industries": industries_out,
         "companies": out_companies,
     }
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(snapshot, indent=2, ensure_ascii=False))
+
+    # ----- Dedup review report -----
+    # Flag pairs of companies whose compact keys are similar enough to look
+    # like duplicates but weren't auto-merged. The user reviews this file and
+    # adds explicit aliases for any real dupes to data/name_aliases.json.
+    review = build_dedup_review(out_companies)
+    review_path = OUTPUT_PATH.parent / "dedup_review.json"
+    review_path.write_text(json.dumps(review, indent=2, ensure_ascii=False))
+
+    # ----- Summary -----
     print(
         f"\nWrote {OUTPUT_PATH.relative_to(ROOT)}: "
-        f"{snapshot['total_companies']} companies across {len(snapshot['industries'])} industries"
+        f"{snapshot['total_companies']} companies across "
+        f"{len(snapshot['industries'])} buckets"
     )
+    print(f"Buckets used: {industries_out}")
+    if seen_unmapped:
+        print(
+            f"\n! {len(seen_unmapped)} Swapcard industry value(s) had no bucket "
+            f"mapping and were routed to 'Other':"
+        )
+        for v in sorted(seen_unmapped):
+            print(f"    - {v}")
+        print(
+            "  Add these to data/industry_buckets.json mappings if you want "
+            "them somewhere specific."
+        )
+    if size_value_counts:
+        print(f"\nCompany Size value distribution (top 10):")
+        for v, n in sorted(size_value_counts.items(), key=lambda kv: -kv[1])[:10]:
+            upper = parse_company_size_upper(v)
+            tag = (
+                " (→ Startups eligible)"
+                if startup_max and upper is not None and upper < startup_max
+                else ""
+            )
+            print(f"    {v!r}: {n}{tag}")
+    print(
+        f"\nDedup review written to {review_path.relative_to(ROOT)}: "
+        f"{len(review['pairs'])} possible duplicate pair(s) flagged"
+    )
+
+
+def build_dedup_review(companies: list[dict]) -> dict:
+    """Find pairs of companies whose names look like potential duplicates.
+
+    Two heuristics, both run on compact (whitespace-stripped, suffix-stripped)
+    keys:
+      1) Substring: one company's key is contained in another (e.g.
+         'jpmorgan' ⊂ 'jpmorganchase').
+      2) Token-set Jaccard ≥ 0.5 over normalized (whitespace-preserving) tokens.
+
+    Caps at 300 pairs to keep the file readable. The script never auto-merges
+    based on these heuristics — they're suggestions for human review.
+    """
+    pairs: list[dict] = []
+    seen_pairs: set[tuple[str, str]] = set()
+
+    info = []
+    for c in companies:
+        name = c["name"]
+        compact = compact_key(name)
+        tokens = set(t for t in normalize(name).split() if len(t) > 1)
+        if compact:
+            info.append((name, compact, tokens))
+
+    # Sort by compact length so substring checks are directional (short ⊂ long)
+    info.sort(key=lambda x: len(x[1]))
+
+    # Substring pass: for each short company, find longer ones it's contained in
+    # Skip very short compacts (< 4 chars) — too many false positives like "ibm"
+    for i, (name_a, ca, ta) in enumerate(info):
+        if len(ca) < 4:
+            continue
+        for name_b, cb, tb in info[i + 1:]:
+            if ca == cb:
+                continue
+            if ca in cb:
+                k = tuple(sorted([name_a, name_b]))
+                if k in seen_pairs:
+                    continue
+                seen_pairs.add(k)
+                pairs.append({"a": name_a, "b": name_b, "reason": "substring"})
+                if len(pairs) >= 300:
+                    return {
+                        "generated_at": datetime.now(timezone.utc).isoformat(
+                            timespec="seconds"
+                        ),
+                        "note": (
+                            "Possible duplicates for human review. Add any real "
+                            "matches to data/name_aliases.json as "
+                            '"raw_swapcard_name": "Canonical Name".'
+                        ),
+                        "pairs": pairs,
+                    }
+
+    # Token-Jaccard pass (skip if tokens already covered above)
+    n = len(info)
+    for i in range(n):
+        name_a, _, ta = info[i]
+        if not ta:
+            continue
+        for j in range(i + 1, n):
+            name_b, _, tb = info[j]
+            if not tb:
+                continue
+            inter = len(ta & tb)
+            if inter == 0:
+                continue
+            union = len(ta | tb)
+            jaccard = inter / union
+            if jaccard >= 0.5 and ta != tb:
+                k = tuple(sorted([name_a, name_b]))
+                if k in seen_pairs:
+                    continue
+                seen_pairs.add(k)
+                pairs.append(
+                    {
+                        "a": name_a,
+                        "b": name_b,
+                        "reason": f"token_overlap_{jaccard:.2f}",
+                    }
+                )
+                if len(pairs) >= 300:
+                    break
+        if len(pairs) >= 300:
+            break
+
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "note": (
+            "Possible duplicates for human review. Add any real matches to "
+            'data/name_aliases.json as "raw_swapcard_name": "Canonical Name".'
+        ),
+        "pairs": pairs,
+    }
 
 
 if __name__ == "__main__":
