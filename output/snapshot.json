@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-05-27T00:00:00+00:00",
+  "total_companies": 4,
+  "total_attendees": 4,
+  "industries": ["Financial Services", "Healthcare & Life Sciences", "IT / SaaS"],
+  "companies": [
+    {"name": "Acme Analytics", "industries": ["IT / SaaS"], "fortune500": false, "attendee_count": 1},
+    {"name": "Eli Lilly & Co.", "industries": ["Healthcare & Life Sciences"], "fortune500": true, "attendee_count": 1},
+    {"name": "JPMorgan Chase & Co.", "industries": ["Financial Services"], "fortune500": true, "attendee_count": 1},
+    {"name": "Zeta Health", "industries": ["Healthcare & Life Sciences"], "fortune500": false, "attendee_count": 1}
+  ]
+}

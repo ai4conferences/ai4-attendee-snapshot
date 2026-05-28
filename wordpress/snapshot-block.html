@@ -1,0 +1,243 @@
+<!--
+  Ai4 attendee snapshot block
+  ===========================
+  Paste this into a Custom HTML block on /who-attends/ where you want the
+  snapshot to appear.
+
+  1. Set SNAPSHOT_URL below to your jsDelivr URL (or wherever you host the JSON).
+     jsDelivr serves files straight from a GitHub repo on a CDN, no setup needed:
+       https://cdn.jsdelivr.net/gh/<user>/<repo>@main/output/snapshot.json
+     If you want stale-while-revalidate caching, use a tagged release instead
+     of @main.
+
+  2. Override the CSS variables at the top of <style> to match ai4.io's theme.
+-->
+
+<div id="ai4-snapshot" data-state="loading">
+  <div class="ai4-toolbar">
+    <button class="ai4-filter is-active" data-industry="__all__">All</button>
+    <!-- industry buttons inserted by JS -->
+  </div>
+
+  <div class="ai4-meta">
+    <span class="ai4-count"></span>
+    <span class="ai4-updated"></span>
+  </div>
+
+  <div class="ai4-loading">Loading attendee snapshot…</div>
+  <div class="ai4-error" hidden>Couldn't load the snapshot. Try refreshing the page.</div>
+
+  <section class="ai4-section" data-section="fortune500" hidden>
+    <h3 class="ai4-section-title">Fortune 500</h3>
+    <ul class="ai4-companies"></ul>
+  </section>
+
+  <section class="ai4-section" data-section="other" hidden>
+    <h3 class="ai4-section-title">Additional Companies</h3>
+    <ul class="ai4-companies"></ul>
+  </section>
+</div>
+
+<style>
+  #ai4-snapshot {
+    /* Override these to match the rest of ai4.io */
+    --ai4-accent: #0a66ff;
+    --ai4-accent-contrast: #ffffff;
+    --ai4-text: #1a1a1a;
+    --ai4-muted: #6b7280;
+    --ai4-border: #e5e7eb;
+    --ai4-bg-soft: #f9fafb;
+    --ai4-radius: 8px;
+
+    color: var(--ai4-text);
+    font-family: inherit;
+    line-height: 1.5;
+    max-width: 1100px;
+    margin: 2rem auto;
+  }
+
+  #ai4-snapshot .ai4-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  #ai4-snapshot .ai4-filter {
+    appearance: none;
+    border: 1px solid var(--ai4-border);
+    background: #fff;
+    color: var(--ai4-text);
+    padding: .5rem .9rem;
+    border-radius: 999px;
+    font: inherit;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: background .15s, color .15s, border-color .15s;
+  }
+  #ai4-snapshot .ai4-filter:hover { border-color: var(--ai4-accent); }
+  #ai4-snapshot .ai4-filter.is-active {
+    background: var(--ai4-accent);
+    color: var(--ai4-accent-contrast);
+    border-color: var(--ai4-accent);
+  }
+
+  #ai4-snapshot .ai4-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: .85rem;
+    color: var(--ai4-muted);
+    margin-bottom: 1rem;
+  }
+
+  #ai4-snapshot .ai4-loading,
+  #ai4-snapshot .ai4-error {
+    padding: 2rem;
+    text-align: center;
+    color: var(--ai4-muted);
+    background: var(--ai4-bg-soft);
+    border-radius: var(--ai4-radius);
+  }
+  #ai4-snapshot[data-state="ready"] .ai4-loading { display: none; }
+  #ai4-snapshot[data-state="error"] .ai4-loading { display: none; }
+  #ai4-snapshot[data-state="error"] .ai4-error { display: block; }
+
+  #ai4-snapshot .ai4-section { margin: 1.5rem 0; }
+  #ai4-snapshot .ai4-section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 .75rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--ai4-border);
+  }
+  #ai4-snapshot .ai4-companies {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: .35rem 1.5rem;
+  }
+  #ai4-snapshot .ai4-companies li {
+    padding: .25rem 0;
+    font-size: .95rem;
+  }
+
+  #ai4-snapshot .ai4-empty {
+    color: var(--ai4-muted);
+    font-style: italic;
+    padding: 1rem 0;
+  }
+</style>
+
+<script>
+(function () {
+  // === CONFIG ===
+  const SNAPSHOT_URL =
+    "https://cdn.jsdelivr.net/gh/YOUR_GH_USER/YOUR_REPO@main/output/snapshot.json";
+
+  const root = document.getElementById("ai4-snapshot");
+  if (!root) return;
+
+  const toolbar = root.querySelector(".ai4-toolbar");
+  const f500El = root.querySelector('[data-section="fortune500"]');
+  const otherEl = root.querySelector('[data-section="other"]');
+  const f500List = f500El.querySelector(".ai4-companies");
+  const otherList = otherEl.querySelector(".ai4-companies");
+  const countEl = root.querySelector(".ai4-count");
+  const updatedEl = root.querySelector(".ai4-updated");
+
+  let snapshot = null;
+  let activeIndustry = "__all__";
+
+  function fmtDate(iso) {
+    try {
+      const d = new Date(iso);
+      return d.toLocaleDateString(undefined, {
+        year: "numeric", month: "short", day: "numeric",
+      });
+    } catch { return iso; }
+  }
+
+  function render() {
+    if (!snapshot) return;
+
+    const matches = (c) =>
+      activeIndustry === "__all__" ||
+      (c.industries || []).includes(activeIndustry);
+
+    const filtered = snapshot.companies.filter(matches);
+    const f500 = filtered.filter((c) => c.fortune500);
+    const other = filtered.filter((c) => !c.fortune500);
+
+    function fill(list, items) {
+      list.innerHTML = "";
+      if (!items.length) {
+        const li = document.createElement("li");
+        li.className = "ai4-empty";
+        li.textContent = "No companies in this industry.";
+        list.appendChild(li);
+        return;
+      }
+      const frag = document.createDocumentFragment();
+      for (const c of items) {
+        const li = document.createElement("li");
+        li.textContent = c.name;
+        frag.appendChild(li);
+      }
+      list.appendChild(frag);
+    }
+
+    fill(f500List, f500);
+    fill(otherList, other);
+    f500El.hidden = f500.length === 0;
+    otherEl.hidden = other.length === 0;
+
+    countEl.textContent =
+      `${filtered.length.toLocaleString()} companies` +
+      (activeIndustry === "__all__"
+        ? ""
+        : ` in ${activeIndustry}`);
+  }
+
+  function buildIndustryButtons(industries) {
+    const frag = document.createDocumentFragment();
+    for (const name of industries) {
+      const btn = document.createElement("button");
+      btn.className = "ai4-filter";
+      btn.dataset.industry = name;
+      btn.textContent = name;
+      frag.appendChild(btn);
+    }
+    toolbar.appendChild(frag);
+  }
+
+  toolbar.addEventListener("click", (e) => {
+    const btn = e.target.closest(".ai4-filter");
+    if (!btn) return;
+    activeIndustry = btn.dataset.industry;
+    toolbar.querySelectorAll(".ai4-filter").forEach((b) =>
+      b.classList.toggle("is-active", b === btn)
+    );
+    render();
+  });
+
+  fetch(SNAPSHOT_URL, { cache: "no-cache" })
+    .then((r) => {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then((data) => {
+      snapshot = data;
+      buildIndustryButtons(data.industries || []);
+      updatedEl.textContent = "Updated " + fmtDate(data.updated_at);
+      root.dataset.state = "ready";
+      render();
+    })
+    .catch((err) => {
+      console.error("ai4-snapshot:", err);
+      root.dataset.state = "error";
+    });
+})();
+</script>

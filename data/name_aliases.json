@@ -1,0 +1,5 @@
+{
+  "_comment": "Map raw Swapcard 'organization' values to canonical display names. Use this when an attendee typed a variant (e.g. 'JPMC') of a Fortune 500 company name. Keys are the raw Swapcard value, values are what shows on the site.",
+  "_example_1": "JPMC -> JPMorgan Chase",
+  "_example_2": "MSFT -> Microsoft"
+}
