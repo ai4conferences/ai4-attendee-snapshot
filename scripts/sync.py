@@ -209,30 +209,37 @@ def extract_industry(person_with_event: dict | None) -> list[str]:
     return result
 
 
-# Parse Swapcard Company Size values like "11-50", "1001-5000", "10000+", or
-# a plain number, returning the UPPER bound. Used to decide if a company
-# qualifies as a Startup. Conservative: "201-500" → 500 (doesn't qualify under
-# a 250 threshold) even though it contains some <250 companies.
-SIZE_PLUS_RE = re.compile(r"^\s*(\d+)\s*\+\s*$")
-SIZE_RANGE_RE = re.compile(r"^\s*(\d+)\s*[-\u2013\u2014]\s*(\d+)\s*$")
-SIZE_PLAIN_RE = re.compile(r"^\s*(\d+)\s*$")
+# Parse Swapcard Company Size values, returning the UPPER bound of the range.
+# Handles formats with comma separators and trailing locale text:
+#   "11-50 employees"          -> 50
+#   "1,001-5,000 employees"    -> 5000
+#   "10,001+ employees"        -> very large (effectively unbounded)
+#   "51-100 empleados"         -> 100  (Spanish)
+#   "101-250"                  -> 250
+#   "42"                       -> 42
+# Used to decide if a company qualifies as a Startup.
+SIZE_DIGITS_RE = re.compile(r"\d+")
+SIZE_PLUS_RE = re.compile(r"(\d+)\s*\+")
+SIZE_RANGE_RE = re.compile(r"(\d+)\s*[-\u2013\u2014]\s*(\d+)")
 
 
 def parse_company_size_upper(raw: str | None) -> int | None:
     if not raw:
         return None
-    s = str(raw).strip()
+    s = str(raw).replace(",", "").strip()
     if not s:
         return None
-    m = SIZE_PLUS_RE.match(s)
-    if m:
-        return 10**9  # effectively unbounded
-    m = SIZE_RANGE_RE.match(s)
+    # "10,001+ employees" -> open-ended top bucket
+    if SIZE_PLUS_RE.search(s):
+        return 10**9
+    # "1-10 employees" or "101-250" -> use the second number
+    m = SIZE_RANGE_RE.search(s)
     if m:
         return int(m.group(2))
-    m = SIZE_PLAIN_RE.match(s)
+    # plain "42"
+    m = SIZE_DIGITS_RE.search(s)
     if m:
-        return int(m.group(1))
+        return int(m.group(0))
     return None
 
 
@@ -482,7 +489,7 @@ def main() -> None:
         if size:
             size_value_counts[size] = size_value_counts.get(size, 0) + 1
             upper = parse_company_size_upper(size)
-            if startup_max and upper is not None and upper < startup_max:
+            if startup_max and upper is not None and upper <= startup_max:
                 buckets.add("Startups")
 
         bucket = companies.setdefault(
@@ -513,7 +520,7 @@ def main() -> None:
                 continue
             modal_size = max(votes.items(), key=lambda kv: kv[1])[0]
             upper = parse_company_size_upper(modal_size)
-            if upper is not None and upper < startup_max:
+            if upper is not None and upper <= startup_max:
                 c["industries"].add("Startups")
 
     # Build company list (alphabetical by name)
@@ -584,7 +591,7 @@ def main() -> None:
             upper = parse_company_size_upper(v)
             tag = (
                 " (→ Startups eligible)"
-                if startup_max and upper is not None and upper < startup_max
+                if startup_max and upper is not None and upper <= startup_max
                 else ""
             )
             print(f"    {v!r}: {n}{tag}")
