@@ -1,5 +1,119 @@
 {
-  "_comment": "Map raw Swapcard 'organization' values to canonical display names. Use this when an attendee typed a variant (e.g. 'JPMC') of a Fortune 500 company name. Keys are the raw Swapcard value, values are what shows on the site.",
-  "_example_1": "JPMC -> JPMorgan Chase",
-  "_example_2": "MSFT -> Microsoft"
+  "_comment": "Maps raw Swapcard 'organization' values (case-insensitive lookup) to a canonical display name. Add new entries as duplicates surface. Keys starting with _ are ignored.",
+  "_format": "raw_swapcard_name (any case): Canonical Display Name",
+
+  "_1": "----- F500 / common-name canonicalization (case fixes + variants) -----",
+  "JPMorgan": "JPMorgan Chase",
+  "JP Morgan": "JPMorgan Chase",
+  "J.P. Morgan": "JPMorgan Chase",
+  "JPMorgan Chase & Co.": "JPMorgan Chase",
+  "JPMorgan Chase & Co": "JPMorgan Chase",
+  "JPMC": "JPMorgan Chase",
+  "Chase": "JPMorgan Chase",
+
+  "Merck": "Merck & Co., Inc.",
+  "Merck and Co": "Merck & Co., Inc.",
+  "Merck & Co": "Merck & Co., Inc.",
+  "Merck & Co.": "Merck & Co., Inc.",
+
+  "Eli Lilly": "Eli Lilly and Company",
+  "Eli Lilly & Co.": "Eli Lilly and Company",
+  "Eli Lilly & Company": "Eli Lilly and Company",
+  "LILLY": "Eli Lilly and Company",
+  "Lilly": "Eli Lilly and Company",
+
+  "DOW": "Dow",
+  "Dow Inc.": "Dow",
+  "Dow Chemical": "Dow",
+
+  "Salesforce.com": "Salesforce",
+  "salesforce": "Salesforce",
+  "SFDC": "Salesforce",
+
+  "Cisco Systems, Inc": "Cisco",
+  "Cisco Systems, Inc.": "Cisco",
+  "Cisco Systems": "Cisco",
+
+  "citigroup": "Citigroup",
+  "Citi": "Citigroup",
+
+  "Wells Fargo Bank": "Wells Fargo",
+  "Wells Fargo & Company": "Wells Fargo",
+
+  "Caterpillar.Inc": "Caterpillar",
+  "Caterpillar Inc": "Caterpillar",
+  "Caterpillar Inc.": "Caterpillar",
+
+  "Apple Inc.": "Apple",
+  "Apple Inc": "Apple",
+
+  "AWS": "Amazon Web Services",
+
+  "_2": "----- User-flagged duplicate merges -----",
+
+  "GM Financial": "General Motors Financial",
+  "General Motors Financial Company": "General Motors Financial",
+
+  "Johnson and Johnson": "Johnson & Johnson",
+  "Johnson&Johnson": "Johnson & Johnson",
+  "J&J": "Johnson & Johnson",
+
+  "_johnson_subs_kept_separate": "J&J Innovative Medicine / MedTech are intentionally NOT aliased to J&J",
+
+  "Nationwide Insurance": "Nationwide",
+
+  "Albertsons Companies, Inc. - Parent": "Albertsons Companies",
+  "Albertsons Companies, Inc.": "Albertsons Companies",
+  "Albertsons": "Albertsons Companies",
+
+  "AT&T Services": "AT&T",
+  "AT&T Inc.": "AT&T",
+  "ATT": "AT&T",
+
+  "Boeing Wichita (formerly Spirit AeroSystems)": "Boeing Wichita",
+
+  "Comcast Business": "Comcast",
+  "Comcast Corporation": "Comcast",
+
+  "General Motors [Cruise]": "Cruise (General Motors)",
+  "Cruise - General Motors": "Cruise (General Motors)",
+  "Cruise": "Cruise (General Motors)",
+
+  "Elevance Health - Parent": "Elevance Health",
+  "Elevance Health Inc": "Elevance Health",
+  "Elevance Health Inc.": "Elevance Health",
+
+  "Energy Transfer LP": "Energy Transfer",
+  "Energy Transfer Partners": "Energy Transfer",
+
+  "FedEx Office": "FedEx",
+  "FedEx Corporation": "FedEx",
+
+  "Lockheed Martin Corporation": "Lockheed Martin",
+  "Lockheed Martin RMS": "Lockheed Martin",
+  "Lockheed Martin Corp.": "Lockheed Martin",
+
+  "Prudential": "Prudential Financial",
+  "Prudential Financial, Inc.": "Prudential Financial",
+  "Prudential Financial Inc.": "Prudential Financial",
+
+  "State Farm Insurance Cos": "State Farm",
+  "State Farm®": "State Farm",
+  "State Farm Insurance": "State Farm",
+  "State Farm Insurance Companies": "State Farm",
+
+  "Abbott Cancer Diagnostics (fka Exact Sciences)": "Abbott Cancer Diagnostics",
+
+  "Abbott Labs": "Abbott Laboratories",
+
+  "AgentField.ai": "Agent Field",
+
+  "_3": "----- Common ALL-CAPS case-correction safety net -----",
+  "GOOGLE": "Google",
+  "MICROSOFT": "Microsoft",
+  "WALMART": "Walmart",
+  "AMAZON": "Amazon",
+  "APPLE": "Apple",
+  "IBM Corporation": "IBM",
+  "IBM Corp.": "IBM"
 }
