@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-28T23:10:08+00:00",
-  "total_companies": 3409,
-  "total_attendees": 5795,
+  "updated_at": "2026-05-28T23:45:45+00:00",
+  "total_companies": 3391,
+  "total_attendees": 5807,
   "industries": [
     "All Industries",
     "Automotive",
@@ -314,15 +314,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Abbott Cancer Diagnostics (fka Exact Sciences)",
-      "industries": [
-        "Healthcare"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Abbott Laboratories",
@@ -331,15 +323,7 @@
         "Manufacturing"
       ],
       "fortune500": false,
-      "attendee_count": 2
-    },
-    {
-      "name": "Abbott Labs",
-      "industries": [
-        "Healthcare"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 3
     },
     {
       "name": "AbbVie, Inc.",
@@ -689,16 +673,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "AgentField.ai",
-      "industries": [
-        "Startups",
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Agilent Technologies",
@@ -1022,15 +997,7 @@
         "Retail"
       ],
       "fortune500": true,
-      "attendee_count": 3
-    },
-    {
-      "name": "Albertsons Companies, Inc. - Parent",
-      "industries": [
-        "Retail"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "ALC",
@@ -1322,7 +1289,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 5
+      "attendee_count": 10
     },
     {
       "name": "AMD",
@@ -1844,7 +1811,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Apple Inc.",
+      "name": "Apple",
       "industries": [
         "Other",
         "Technology"
@@ -2314,15 +2281,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 3
-    },
-    {
-      "name": "AT&T Services",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "atec spine",
@@ -2604,14 +2563,6 @@
       ],
       "fortune500": false,
       "attendee_count": 1
-    },
-    {
-      "name": "AWS",
-      "industries": [
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 5
     },
     {
       "name": "AXA XL",
@@ -3643,15 +3594,7 @@
         "Manufacturing"
       ],
       "fortune500": true,
-      "attendee_count": 3
-    },
-    {
-      "name": "Boeing Wichita (formerly Spirit AeroSystems)",
-      "industries": [
-        "Manufacturing"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "Boffman Consulting",
@@ -3920,6 +3863,14 @@
       "industries": [
         "Other",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Brinks Home",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -4292,7 +4243,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Canonizer.com LLC",
@@ -4550,7 +4501,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Caterpillar.Inc",
+      "name": "Caterpillar",
       "industries": [
         "Manufacturing",
         "Technology"
@@ -5150,15 +5101,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 6
-    },
-    {
-      "name": "Cisco Systems, Inc",
-      "industries": [
-        "Technology"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 7
     },
     {
       "name": "CITCO",
@@ -5173,14 +5116,6 @@
       "industries": [
         "Other",
         "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Citi",
-      "industries": [
-        "Financial Services"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -5208,12 +5143,12 @@
       "attendee_count": 1
     },
     {
-      "name": "citigroup",
+      "name": "Citigroup",
       "industries": [
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "Citiustech",
@@ -5913,15 +5848,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 3
-    },
-    {
-      "name": "Comcast Business",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "Command Post Technologies",
@@ -6219,6 +6146,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Corning",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Corpay, inc",
       "industries": [
         "Financial Services",
@@ -6481,12 +6416,13 @@
       "attendee_count": 2
     },
     {
-      "name": "Cruise - General Motors",
+      "name": "Cruise (General Motors)",
       "industries": [
+        "Automotive",
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Crunchbase",
@@ -7553,7 +7489,7 @@
       "attendee_count": 1
     },
     {
-      "name": "DOW",
+      "name": "Dow",
       "industries": [
         "Government"
       ],
@@ -8088,22 +8024,14 @@
       "attendee_count": 2
     },
     {
-      "name": "Elevance Health - Parent",
-      "industries": [
-        "Insurance"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
-    },
-    {
-      "name": "Elevance Health Inc",
+      "name": "Elevance Health",
       "industries": [
         "Healthcare",
         "Insurance",
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 6
+      "attendee_count": 7
     },
     {
       "name": "Elgin Community College",
@@ -8114,21 +8042,13 @@
       "attendee_count": 1
     },
     {
-      "name": "Eli Lilly & Company",
-      "industries": [
-        "Healthcare"
-      ],
-      "fortune500": true,
-      "attendee_count": 3
-    },
-    {
       "name": "Eli Lilly and Company",
       "industries": [
         "Healthcare",
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 7
+      "attendee_count": 12
     },
     {
       "name": "EllisDon",
@@ -8276,15 +8196,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 3
-    },
-    {
-      "name": "Energy Transfer LP",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "EnergyX",
@@ -8698,6 +8610,14 @@
       "name": "Exact Sciences is now Abbott",
       "industries": [
         "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Exadel",
+      "industries": [
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -9136,18 +9056,11 @@
     {
       "name": "FedEx",
       "industries": [
+        "Other",
         "Retail"
       ],
       "fortune500": true,
-      "attendee_count": 4
-    },
-    {
-      "name": "FedEx Office",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 5
     },
     {
       "name": "Fengate Asset Management",
@@ -10295,20 +10208,12 @@
       "attendee_count": 3
     },
     {
-      "name": "General Motors [Cruise]",
-      "industries": [
-        "Automotive"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
-    },
-    {
       "name": "General Motors Financial",
       "industries": [
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 3
     },
     {
       "name": "General Motors Insurance",
@@ -10541,14 +10446,6 @@
       "attendee_count": 1
     },
     {
-      "name": "GM Financial",
-      "industries": [
-        "Financial Services"
-      ],
-      "fortune500": true,
-      "attendee_count": 2
-    },
-    {
       "name": "GN Group",
       "industries": [
         "Technology"
@@ -10638,6 +10535,14 @@
       "name": "Golub capital",
       "industries": [
         "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Goodleap",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -12074,6 +11979,14 @@
       "attendee_count": 1
     },
     {
+      "name": "ICCU",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "ICCU (Idaho Central CU)",
       "industries": [
         "Financial Services"
@@ -12930,14 +12843,6 @@
       "attendee_count": 1
     },
     {
-      "name": "J.P. Morgan",
-      "industries": [
-        "Financial Services"
-      ],
-      "fortune500": true,
-      "attendee_count": 5
-    },
-    {
       "name": "Jabil, Inc.",
       "industries": [
         "Manufacturing"
@@ -13191,7 +13096,7 @@
         "Healthcare"
       ],
       "fortune500": true,
-      "attendee_count": 5
+      "attendee_count": 10
     },
     {
       "name": "Johnson & Johnson MedTech, Neurovascular",
@@ -13200,14 +13105,6 @@
       ],
       "fortune500": true,
       "attendee_count": 1
-    },
-    {
-      "name": "Johnson and Johnson",
-      "industries": [
-        "Healthcare"
-      ],
-      "fortune500": true,
-      "attendee_count": 5
     },
     {
       "name": "Johnson and Johnson Innovative medicine",
@@ -13251,6 +13148,15 @@
       "attendee_count": 1
     },
     {
+      "name": "JP Morgan & Chase",
+      "industries": [
+        "Financial Services",
+        "Retail"
+      ],
+      "fortune500": true,
+      "attendee_count": 25
+    },
+    {
       "name": "JP Morgan Chase, Private Bank",
       "industries": [
         "Financial Services"
@@ -13271,15 +13177,6 @@
       "industries": [],
       "fortune500": true,
       "attendee_count": 1
-    },
-    {
-      "name": "JPMorgan Chase & Co.",
-      "industries": [
-        "Financial Services",
-        "Retail"
-      ],
-      "fortune500": true,
-      "attendee_count": 20
     },
     {
       "name": "JProfessionals AS",
@@ -13622,7 +13519,7 @@
         "Manufacturing"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Kingspan Insulted Panels",
@@ -14446,14 +14343,6 @@
       "attendee_count": 1
     },
     {
-      "name": "LILLY",
-      "industries": [
-        "Healthcare"
-      ],
-      "fortune500": true,
-      "attendee_count": 2
-    },
-    {
       "name": "Lima Bean Techonologies",
       "industries": [
         "Startups",
@@ -14570,7 +14459,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Lockheed Martin Corporation",
+      "name": "Lockheed Martin",
       "industries": [
         "Manufacturing",
         "Other",
@@ -14578,15 +14467,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 9
-    },
-    {
-      "name": "Lockheed Martin RMS",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 11
     },
     {
       "name": "Loft Orbital",
@@ -15550,15 +15431,7 @@
         "Startups"
       ],
       "fortune500": true,
-      "attendee_count": 7
-    },
-    {
-      "name": "Merck and Co",
-      "industries": [
-        "Healthcare"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 8
     },
     {
       "name": "Merck KGaA",
@@ -16525,16 +16398,7 @@
         "Insurance"
       ],
       "fortune500": true,
-      "attendee_count": 3
-    },
-    {
-      "name": "Nationwide Insurance",
-      "industries": [
-        "Financial Services",
-        "Insurance"
-      ],
-      "fortune500": true,
-      "attendee_count": 5
+      "attendee_count": 8
     },
     {
       "name": "Nationwide Mutual Insurance",
@@ -18367,6 +18231,15 @@
       "attendee_count": 1
     },
     {
+      "name": "PamTen Inc",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Panasonic",
       "industries": [
         "Manufacturing"
@@ -18658,6 +18531,15 @@
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Pechanga Gaming Commission",
+      "industries": [
+        "Other",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -19537,20 +19419,12 @@
       "attendee_count": 3
     },
     {
-      "name": "Prudential",
+      "name": "Prudential Financial",
       "industries": [
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 2
-    },
-    {
-      "name": "Prudential Financial, Inc.",
-      "industries": [
-        "Financial Services"
-      ],
-      "fortune500": true,
-      "attendee_count": 5
+      "attendee_count": 7
     },
     {
       "name": "Prufer.ai",
@@ -20987,15 +20861,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 2
-    },
-    {
-      "name": "Salesforce.com",
-      "industries": [
-        "Technology"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 3
     },
     {
       "name": "SAMAA TV",
@@ -22643,21 +22509,13 @@
       "attendee_count": 10
     },
     {
-      "name": "State Farm Insurance Cos",
-      "industries": [
-        "Insurance"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
-    },
-    {
-      "name": "State Farm®",
+      "name": "State Farm",
       "industries": [
         "Insurance",
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "State of California",
@@ -22906,6 +22764,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "SubcontractorHub Inc.",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
     },
     {
       "name": "Sumer",
@@ -27276,15 +27143,7 @@
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 12
-    },
-    {
-      "name": "Wells Fargo Bank",
-      "industries": [
-        "Financial Services"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 13
     },
     {
       "name": "WellSpan Health",
