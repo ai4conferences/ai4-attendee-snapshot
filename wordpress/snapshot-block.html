@@ -1,243 +1,180 @@
-<!--
-  Ai4 attendee snapshot block
-  ===========================
-  Paste this into a Custom HTML block on /who-attends/ where you want the
-  snapshot to appear.
-
-  1. Set SNAPSHOT_URL below to your jsDelivr URL (or wherever you host the JSON).
-     jsDelivr serves files straight from a GitHub repo on a CDN, no setup needed:
-       https://cdn.jsdelivr.net/gh/<user>/<repo>@main/output/snapshot.json
-     If you want stale-while-revalidate caching, use a tagged release instead
-     of @main.
-
-  2. Override the CSS variables at the top of <style> to match ai4.io's theme.
--->
-
+<!-- Ai4 attendee snapshot — paste into a Custom HTML block on /who-attends/ -->
 <div id="ai4-snapshot" data-state="loading">
-  <div class="ai4-toolbar">
-    <!-- industry buttons inserted by JS — first one becomes the active default -->
-  </div>
-
-  <div class="ai4-meta">
-    <span class="ai4-count"></span>
-    <span class="ai4-updated"></span>
-  </div>
-
+  <div class="ai4-toolbar"></div>
   <div class="ai4-loading">Loading attendee snapshot…</div>
   <div class="ai4-error" hidden>Couldn't load the snapshot. Try refreshing the page.</div>
-
-  <section class="ai4-section" data-section="fortune500" hidden>
-    <h3 class="ai4-section-title">Fortune 500</h3>
-    <ul class="ai4-companies"></ul>
-  </section>
-
-  <section class="ai4-section" data-section="other" hidden>
-    <h3 class="ai4-section-title">Additional Companies</h3>
-    <ul class="ai4-companies"></ul>
-  </section>
+  <ul class="ai4-companies" aria-label="Companies attending"></ul>
 </div>
 
 <style>
   #ai4-snapshot {
-    /* Override these to match the rest of ai4.io */
-    --ai4-accent: #0a66ff;
-    --ai4-accent-contrast: #ffffff;
-    --ai4-text: #1a1a1a;
-    --ai4-muted: #6b7280;
-    --ai4-border: #e5e7eb;
-    --ai4-bg-soft: #f9fafb;
-    --ai4-radius: 8px;
+    --ai4-accent: #2D1B69;
+    --ai4-accent-contrast: #FFFFFF;
+    --ai4-button-text: #6B46C1;
+    --ai4-button-border: #D8CCEC;
+    --ai4-button-hover: #F4EFFB;
+    --ai4-text: #1A1646;
+    --ai4-muted: #6B7280;
+    --ai4-card-bg: #FFFFFF;
+    --ai4-card-shadow: 0 1px 3px rgba(20, 14, 60, 0.08);
+    --ai4-card-radius: 14px;
 
-    color: var(--ai4-text);
     font-family: inherit;
-    line-height: 1.5;
-    max-width: 1100px;
-    margin: 2rem auto;
+    color: var(--ai4-text);
+    line-height: 1.4;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 3rem;
   }
-
   #ai4-snapshot .ai4-toolbar {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
-    margin-bottom: 1rem;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 0.5rem 0 2rem;
   }
-
   #ai4-snapshot .ai4-filter {
     appearance: none;
-    border: 1px solid var(--ai4-border);
-    background: #fff;
-    color: var(--ai4-text);
-    padding: .5rem .9rem;
-    border-radius: 999px;
+    border: 1.5px solid var(--ai4-button-border);
+    background: #FFFFFF;
+    color: var(--ai4-button-text);
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
     font: inherit;
-    font-size: .9rem;
+    font-size: 0.95rem;
+    font-weight: 500;
     cursor: pointer;
     transition: background .15s, color .15s, border-color .15s;
   }
-  #ai4-snapshot .ai4-filter:hover { border-color: var(--ai4-accent); }
+  #ai4-snapshot .ai4-filter:hover {
+    background: var(--ai4-button-hover);
+    border-color: var(--ai4-accent);
+  }
   #ai4-snapshot .ai4-filter.is-active {
     background: var(--ai4-accent);
     color: var(--ai4-accent-contrast);
     border-color: var(--ai4-accent);
   }
-
-  #ai4-snapshot .ai4-meta {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    font-size: .85rem;
-    color: var(--ai4-muted);
-    margin-bottom: 1rem;
-  }
-
   #ai4-snapshot .ai4-loading,
   #ai4-snapshot .ai4-error {
-    padding: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
     color: var(--ai4-muted);
-    background: var(--ai4-bg-soft);
-    border-radius: var(--ai4-radius);
+    background: var(--ai4-card-bg);
+    border-radius: var(--ai4-card-radius);
+    box-shadow: var(--ai4-card-shadow);
   }
   #ai4-snapshot[data-state="ready"] .ai4-loading { display: none; }
   #ai4-snapshot[data-state="error"] .ai4-loading { display: none; }
   #ai4-snapshot[data-state="error"] .ai4-error { display: block; }
-
-  #ai4-snapshot .ai4-section { margin: 1.5rem 0; }
-  #ai4-snapshot .ai4-section-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 0 0 .75rem;
-    padding-bottom: .5rem;
-    border-bottom: 1px solid var(--ai4-border);
-  }
   #ai4-snapshot .ai4-companies {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: .35rem 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
   }
   #ai4-snapshot .ai4-companies li {
-    padding: .25rem 0;
-    font-size: .95rem;
+    background: var(--ai4-card-bg);
+    border-radius: var(--ai4-card-radius);
+    padding: 1.1rem 1.25rem;
+    box-shadow: var(--ai4-card-shadow);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ai4-text);
+    text-align: left;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
   }
-
-  #ai4-snapshot .ai4-empty {
+  #ai4-snapshot .ai4-companies li.is-empty {
+    grid-column: 1 / -1;
     color: var(--ai4-muted);
     font-style: italic;
+    background: transparent;
+    box-shadow: none;
     padding: 1rem 0;
+    justify-content: center;
   }
 </style>
 
 <script>
 (function () {
-  // === CONFIG ===
-  const SNAPSHOT_URL =
-    "https://cdn.jsdelivr.net/gh/ai4conferences/ai4-attendee-snapshot@main/output/snapshot.json";
+  const SNAPSHOT_URL = "https://cdn.jsdelivr.net/gh/ai4conferences/ai4-attendee-snapshot@main/output/snapshot.json";
+  const SHOW_ALL_LABEL = "All Industries";
 
   const root = document.getElementById("ai4-snapshot");
   if (!root) return;
-
   const toolbar = root.querySelector(".ai4-toolbar");
-  const f500El = root.querySelector('[data-section="fortune500"]');
-  const otherEl = root.querySelector('[data-section="other"]');
-  const f500List = f500El.querySelector(".ai4-companies");
-  const otherList = otherEl.querySelector(".ai4-companies");
-  const countEl = root.querySelector(".ai4-count");
-  const updatedEl = root.querySelector(".ai4-updated");
+  const listEl  = root.querySelector(".ai4-companies");
 
   let snapshot = null;
-  let activeIndustry = null;  // set to first available bucket once data loads
-
-  function fmtDate(iso) {
-    try {
-      const d = new Date(iso);
-      return d.toLocaleDateString(undefined, {
-        year: "numeric", month: "short", day: "numeric",
-      });
-    } catch { return iso; }
-  }
+  let activeIndustry = SHOW_ALL_LABEL;
 
   function render() {
     if (!snapshot) return;
+    const filtered = activeIndustry === SHOW_ALL_LABEL
+      ? snapshot.companies
+      : snapshot.companies.filter(c => (c.industries || []).includes(activeIndustry));
 
-    const matches = (c) =>
-      activeIndustry !== null &&
-      (c.industries || []).includes(activeIndustry);
+    // F500 first (alpha), then non-F500 (alpha), merged into one list.
+    const cmp = (a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+    const ordered = filtered.filter(c => c.fortune500).sort(cmp)
+      .concat(filtered.filter(c => !c.fortune500).sort(cmp));
 
-    const filtered = snapshot.companies.filter(matches);
-    const f500 = filtered.filter((c) => c.fortune500);
-    const other = filtered.filter((c) => !c.fortune500);
-
-    function fill(list, items) {
-      list.innerHTML = "";
-      if (!items.length) {
-        const li = document.createElement("li");
-        li.className = "ai4-empty";
-        li.textContent = "No companies in this industry.";
-        list.appendChild(li);
-        return;
-      }
-      const frag = document.createDocumentFragment();
-      for (const c of items) {
-        const li = document.createElement("li");
-        li.textContent = c.name;
-        frag.appendChild(li);
-      }
-      list.appendChild(frag);
+    listEl.innerHTML = "";
+    if (!ordered.length) {
+      const li = document.createElement("li");
+      li.className = "is-empty";
+      li.textContent = "No companies in this category yet.";
+      listEl.appendChild(li);
+      return;
     }
-
-    fill(f500List, f500);
-    fill(otherList, other);
-    f500El.hidden = f500.length === 0;
-    otherEl.hidden = other.length === 0;
-
-    countEl.textContent =
-      activeIndustry === null
-        ? "0 companies"
-        : `${filtered.length.toLocaleString()} companies in ${activeIndustry}`;
+    const frag = document.createDocumentFragment();
+    for (const c of ordered) {
+      const li = document.createElement("li");
+      li.textContent = c.name;
+      frag.appendChild(li);
+    }
+    listEl.appendChild(frag);
   }
 
   function buildIndustryButtons(industries) {
+    const labels = [SHOW_ALL_LABEL].concat(industries.filter(i => i !== SHOW_ALL_LABEL));
     const frag = document.createDocumentFragment();
-    industries.forEach((name, i) => {
+    labels.forEach(name => {
       const btn = document.createElement("button");
-      btn.className = "ai4-filter" + (i === 0 ? " is-active" : "");
+      btn.className = "ai4-filter" + (name === activeIndustry ? " is-active" : "");
       btn.dataset.industry = name;
       btn.textContent = name;
       frag.appendChild(btn);
     });
     toolbar.appendChild(frag);
-    // Default selection: the first industry (matches the first button's active state)
-    activeIndustry = industries.length ? industries[0] : null;
   }
 
   toolbar.addEventListener("click", (e) => {
     const btn = e.target.closest(".ai4-filter");
     if (!btn) return;
     activeIndustry = btn.dataset.industry;
-    toolbar.querySelectorAll(".ai4-filter").forEach((b) =>
-      b.classList.toggle("is-active", b === btn)
-    );
+    toolbar.querySelectorAll(".ai4-filter").forEach(b =>
+      b.classList.toggle("is-active", b === btn));
     render();
   });
 
   fetch(SNAPSHOT_URL, { cache: "no-cache" })
-    .then((r) => {
-      if (!r.ok) throw new Error("HTTP " + r.status);
-      return r.json();
-    })
-    .then((data) => {
+    .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(data => {
       snapshot = data;
       buildIndustryButtons(data.industries || []);
-      updatedEl.textContent = "Updated " + fmtDate(data.updated_at);
       root.dataset.state = "ready";
       render();
     })
-    .catch((err) => {
+    .catch(err => {
       console.error("ai4-snapshot:", err);
       root.dataset.state = "error";
+      const errEl = root.querySelector(".ai4-error");
+      if (errEl) errEl.textContent = "Couldn't load snapshot: " + err.message;
     });
 })();
 </script>
