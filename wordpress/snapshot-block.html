@@ -17,7 +17,7 @@
     --ai4-muted: #6B7280;
     --ai4-card-bg: #FFFFFF;
     --ai4-card-shadow: 0 1px 3px rgba(20, 14, 60, 0.08);
-    --ai4-card-radius: 14px;
+    --ai4-card-radius: 12px;
 
     font-family: inherit;
     color: var(--ai4-text);
@@ -73,18 +73,18 @@
     margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1rem;
+    gap: 1.25rem;
   }
   #ai4-snapshot .ai4-companies li {
     background: var(--ai4-card-bg);
     border-radius: var(--ai4-card-radius);
-    padding: 1.1rem 1.25rem;
+    padding: 0.85rem 1.25rem;
     box-shadow: var(--ai4-card-shadow);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--ai4-text);
     text-align: left;
-    min-height: 3rem;
+    min-height: 2rem;
     display: flex;
     align-items: center;
   }
@@ -118,7 +118,6 @@
       ? snapshot.companies
       : snapshot.companies.filter(c => (c.industries || []).includes(activeIndustry));
 
-    // F500 first (alpha), then non-F500 (alpha), merged into one list.
     const cmp = (a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase());
     const ordered = filtered.filter(c => c.fortune500).sort(cmp)
       .concat(filtered.filter(c => !c.fortune500).sort(cmp));
@@ -162,19 +161,4 @@
     render();
   });
 
-  fetch(SNAPSHOT_URL, { cache: "no-cache" })
-    .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-    .then(data => {
-      snapshot = data;
-      buildIndustryButtons(data.industries || []);
-      root.dataset.state = "ready";
-      render();
-    })
-    .catch(err => {
-      console.error("ai4-snapshot:", err);
-      root.dataset.state = "error";
-      const errEl = root.querySelector(".ai4-error");
-      if (errEl) errEl.textContent = "Couldn't load snapshot: " + err.message;
-    });
-})();
-</script>
+  fetch(SNAPSHOT_URL, { cache: "no-cache"
