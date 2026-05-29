@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-05-29T16:02:36+00:00",
-  "total_companies": 3431,
-  "total_attendees": 5891,
+  "updated_at": "2026-05-29T17:02:13+00:00",
+  "total_companies": 3433,
+  "total_attendees": 5895,
   "industries": [
     "All Industries",
     "Automotive",
@@ -111,7 +111,7 @@
     {
       "name": "37 Partners",
       "industries": [],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -711,6 +711,15 @@
       "attendee_count": 2
     },
     {
+      "name": "Agentic Logic Agency",
+      "industries": [
+        "Cybersecurity",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Agilent Technologies",
       "industries": [
         "Healthcare"
@@ -1289,7 +1298,7 @@
       "industries": [
         "Technology"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -1333,7 +1342,7 @@
       "industries": [
         "Other"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -1341,7 +1350,7 @@
       "industries": [
         "Technology"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 10
     },
     {
@@ -2698,6 +2707,12 @@
       "attendee_count": 1
     },
     {
+      "name": "Backblaze",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Backyard-Ai",
       "industries": [
         "Education"
@@ -3665,13 +3680,13 @@
       "industries": [
         "Financial Services"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
       "name": "Boeing Research and Technology",
       "industries": [],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -3679,7 +3694,7 @@
       "industries": [
         "Manufacturing"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 4
     },
     {
@@ -4389,7 +4404,7 @@
       "industries": [
         "Financial Services"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 4
     },
     {
@@ -5138,7 +5153,7 @@
       "industries": [
         "Healthcare"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -5146,7 +5161,7 @@
       "industries": [
         "Healthcare"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -6334,7 +6349,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "COUNT IT GmbH",
@@ -6688,7 +6703,7 @@
       "industries": [
         "Healthcare"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -7642,7 +7657,7 @@
       "industries": [
         "Other"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -8434,7 +8449,7 @@
       "industries": [
         "Financial Services"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -10224,15 +10239,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Gavant Software",
-      "industries": [
-        "Startups",
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "GB Corp",
       "industries": [
         "Manufacturing"
@@ -10440,7 +10446,7 @@
     {
       "name": "George P. Johnson",
       "industries": [],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -10734,7 +10740,7 @@
         "Other",
         "Technology"
       ],
-      "fortune500": false,
+      "fortune500": true,
       "attendee_count": 86
     },
     {
@@ -10911,7 +10917,7 @@
       "industries": [
         "Financial Services"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -12076,7 +12082,7 @@
       "industries": [
         "Financial Services"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 3
     },
     {
@@ -13267,7 +13273,7 @@
       "industries": [
         "Healthcare"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -13275,7 +13281,7 @@
       "industries": [
         "Healthcare"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -13283,7 +13289,7 @@
       "industries": [
         "Healthcare"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -13291,7 +13297,7 @@
       "industries": [
         "Technology"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -13299,7 +13305,7 @@
       "industries": [
         "Manufacturing"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -14472,7 +14478,7 @@
       "industries": [
         "Financial Services"
       ],
-      "fortune500": false,
+      "fortune500": true,
       "attendee_count": 1
     },
     {
@@ -14915,7 +14921,7 @@
       "industries": [
         "Financial Services"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -15464,7 +15470,7 @@
     {
       "name": "Mead Johnson Nutrition",
       "industries": [],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -15622,7 +15628,7 @@
       "industries": [
         "Healthcare"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 2
     },
     {
@@ -16599,7 +16605,7 @@
       "industries": [
         "Insurance"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -18855,6 +18861,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Performance Contracting Group",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Performance Food Group",
       "industries": [
         "Other"
@@ -19647,7 +19661,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "Prudential Financial",
@@ -20923,7 +20937,7 @@
         "Other",
         "Technology"
       ],
-      "fortune500": false,
+      "fortune500": true,
       "attendee_count": 7
     },
     {
@@ -21027,7 +21041,7 @@
         "Startups",
         "Technology"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -21625,7 +21639,10 @@
     },
     {
       "name": "Sequel.io",
-      "industries": [],
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -23593,7 +23610,7 @@
       "industries": [
         "Financial Services"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 3
     },
     {
@@ -25654,7 +25671,7 @@
       "industries": [
         "Healthcare"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -25871,7 +25888,7 @@
       "industries": [
         "Other"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -26311,7 +26328,7 @@
     {
       "name": "UPS",
       "industries": [],
-      "fortune500": false,
+      "fortune500": true,
       "attendee_count": 2
     },
     {
@@ -27227,7 +27244,7 @@
       "industries": [
         "Other"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -28300,7 +28317,7 @@
       "industries": [
         "Technology"
       ],
-      "fortune500": true,
+      "fortune500": false,
       "attendee_count": 1
     },
     {
