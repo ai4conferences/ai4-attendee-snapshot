@@ -18,7 +18,6 @@
     --ai4-card-bg: #FFFFFF;
     --ai4-card-shadow: 0 1px 3px rgba(20, 14, 60, 0.08);
     --ai4-card-radius: 12px;
-
     font-family: inherit;
     color: var(--ai4-text);
     line-height: 1.4;
@@ -73,7 +72,7 @@
     margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.25rem;
+    gap: 1rem;
   }
   #ai4-snapshot .ai4-companies li {
     background: var(--ai4-card-bg);
@@ -99,66 +98,4 @@
   }
 </style>
 
-<script>
-(function () {
-  const SNAPSHOT_URL = "https://cdn.jsdelivr.net/gh/ai4conferences/ai4-attendee-snapshot@main/output/snapshot.json";
-  const SHOW_ALL_LABEL = "All Industries";
-
-  const root = document.getElementById("ai4-snapshot");
-  if (!root) return;
-  const toolbar = root.querySelector(".ai4-toolbar");
-  const listEl  = root.querySelector(".ai4-companies");
-
-  let snapshot = null;
-  let activeIndustry = SHOW_ALL_LABEL;
-
-  function render() {
-    if (!snapshot) return;
-    const filtered = activeIndustry === SHOW_ALL_LABEL
-      ? snapshot.companies
-      : snapshot.companies.filter(c => (c.industries || []).includes(activeIndustry));
-
-    const cmp = (a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase());
-    const ordered = filtered.filter(c => c.fortune500).sort(cmp)
-      .concat(filtered.filter(c => !c.fortune500).sort(cmp));
-
-    listEl.innerHTML = "";
-    if (!ordered.length) {
-      const li = document.createElement("li");
-      li.className = "is-empty";
-      li.textContent = "No companies in this category yet.";
-      listEl.appendChild(li);
-      return;
-    }
-    const frag = document.createDocumentFragment();
-    for (const c of ordered) {
-      const li = document.createElement("li");
-      li.textContent = c.name;
-      frag.appendChild(li);
-    }
-    listEl.appendChild(frag);
-  }
-
-  function buildIndustryButtons(industries) {
-    const labels = [SHOW_ALL_LABEL].concat(industries.filter(i => i !== SHOW_ALL_LABEL));
-    const frag = document.createDocumentFragment();
-    labels.forEach(name => {
-      const btn = document.createElement("button");
-      btn.className = "ai4-filter" + (name === activeIndustry ? " is-active" : "");
-      btn.dataset.industry = name;
-      btn.textContent = name;
-      frag.appendChild(btn);
-    });
-    toolbar.appendChild(frag);
-  }
-
-  toolbar.addEventListener("click", (e) => {
-    const btn = e.target.closest(".ai4-filter");
-    if (!btn) return;
-    activeIndustry = btn.dataset.industry;
-    toolbar.querySelectorAll(".ai4-filter").forEach(b =>
-      b.classList.toggle("is-active", b === btn));
-    render();
-  });
-
-  fetch(SNAPSHOT_URL, { cache: "no-cache"
+<script src="https://cdn.jsdelivr.net/gh/ai4conferences/ai4-attendee-snapshot@main/output/snapshot-block.js" defer></script>
