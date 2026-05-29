@@ -370,22 +370,58 @@ def load_fortune500_index() -> dict:
 
 
 def is_fortune500(name: str, index: dict) -> bool:
-    """Check whether a company matches any F500 entry (exact compact OR token-subset)."""
+    """Check whether a company matches any F500 entry.
+
+    Strict rules (no fuzzy single-token matching to avoid false positives):
+      1. Exact compact-key match after normalize+suffix-strip (handles 'Apple',
+         'Apple Inc.', 'JPMorgan Chase & Co.' → 'JPMorgan Chase', etc.)
+      2. Multi-token subset: the shorter side must have AT LEAST 2 meaningful
+         tokens (after removing stopwords) and be a subset of the longer side.
+         Prevents '37 Partners' matching 'Enterprise Products Partners' via
+         the single 'partners' token.
+
+    Single-token canonicals (e.g. 'Cisco' for 'Cisco Systems') are handled by
+    listing both forms in data/fortune500.json, or by aliasing the raw value
+    to a name that exact-matches an F500 entry.
+    """
+    STOPWORDS = {"the", "and", "for", "inc", "llc", "ltd", "corp", "group",
+                 "company", "companies", "holdings", "international", "global",
+                 "partners", "technologies", "services", "solutions", "systems",
+                 "communications", "industries", "products", "enterprise",
+                 "networks", "healthcare", "health", "financial", "capital",
+                 "energy", "media", "consulting"}
+
+    def meaningful_tokens(n: str) -> frozenset[str]:
+        return frozenset(t for t in normalize(n).split()
+                         if len(t) > 2 and t not in STOPWORDS)
+
     ck = compact_key(name)
     if not ck:
         return False
+
+    # Rule 1: exact compact key match
     if ck in index["compact_keys"]:
         return True
-    company_tokens = frozenset(t for t in normalize(name).split() if len(t) > 2)
-    if not company_tokens:
+
+    # Rule 2: multi-token subset (require 2+ meaningful tokens on shorter side)
+    company_tokens = meaningful_tokens(name)
+    if len(company_tokens) < 2:
+        # Single-token names ONLY match via Rule 1 (exact compact). If you want
+        # "Cisco" to match the F500, add "Cisco" to data/fortune500.json.
         return False
-    for _f500_name, f500_tokens in index["token_sets"]:
-        if not f500_tokens:
+
+    for _f500_name, f500_tokens_all in index["token_sets"]:
+        f500_tokens = frozenset(t for t in f500_tokens_all if t not in STOPWORDS)
+        if len(f500_tokens) < 2:
             continue
-        # Bidirectional subset: catches both shorter ("JPMorgan" → "JPMorgan Chase")
-        # and longer ("JPMorgan Chase & Co." → "JPMorgan Chase") variants
-        if company_tokens <= f500_tokens or f500_tokens <= company_tokens:
+        shorter, longer = (
+            (company_tokens, f500_tokens)
+            if len(company_tokens) <= len(f500_tokens)
+            else (f500_tokens, company_tokens)
+        )
+        if shorter <= longer:
             return True
+
     return False
 
 
