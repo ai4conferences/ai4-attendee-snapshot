@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-06-01T22:39:53+00:00",
-  "total_companies": 3471,
-  "total_attendees": 5971,
+  "updated_at": "2026-06-08T21:20:20+00:00",
+  "total_companies": 3791,
+  "total_attendees": 6515,
   "industries": [
     "All Industries",
     "Automotive",
@@ -82,6 +82,15 @@
       "attendee_count": 1
     },
     {
+      "name": "27Global",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "2nd Order Solutions",
       "industries": [
         "Financial Services",
@@ -130,6 +139,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "3vue LLC",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
     },
     {
       "name": "401GO",
@@ -333,7 +351,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 15
+      "attendee_count": 20
     },
     {
       "name": "Abercrombie and Fitch",
@@ -348,6 +366,15 @@
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Ability AI",
+      "industries": [
+        "Healthcare",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -422,6 +449,24 @@
       "name": "Access Telecare",
       "industries": [
         "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Accevi",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Accounting Your Life",
+      "industries": [
+        "Financial Services",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -505,6 +550,14 @@
       "name": "Adient",
       "industries": [
         "Automotive"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "adm-Indicia",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -615,7 +668,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Advisor Labs",
@@ -649,7 +702,15 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 1
+    },
+    {
+      "name": "AECOM Tishman",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "AEG Vision",
@@ -729,6 +790,30 @@
       "attendee_count": 1
     },
     {
+      "name": "AgFirst Farm Credit Bank",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "AgFirst Farm Credit Bank (a Government Sponsored Entity -- GSE)",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Agilent",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Agilent Technologies",
       "industries": [
         "Healthcare"
@@ -778,6 +863,23 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Agua Caliente",
+      "industries": [
+        "Government",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Agua Caliente Casinos",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 8
     },
     {
       "name": "Ahold Delhaize USA",
@@ -869,6 +971,12 @@
       "attendee_count": 1
     },
     {
+      "name": "AI Trendz",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Ai4",
       "industries": [
         "All Industries",
@@ -876,7 +984,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 6
+      "attendee_count": 7
     },
     {
       "name": "AIEdgeinsights",
@@ -955,6 +1063,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Airlines for America",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Airlines Reporting Corporation",
       "industries": [
         "Other"
@@ -1017,7 +1134,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 7
+      "attendee_count": 9
     },
     {
       "name": "Alaimo Labs",
@@ -1104,6 +1221,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Alexion, AstraZeneca Rare Disease",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "ALFA Insurance",
       "industries": [
         "Insurance"
@@ -1169,6 +1294,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Allan Hancock College",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Allegis Group Inc.",
       "industries": [
         "Other",
@@ -1197,6 +1330,14 @@
       "name": "Alleviate Financial",
       "industries": [
         "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Alliance Defending Freedom",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -1236,10 +1377,11 @@
       "name": "Allstate",
       "industries": [
         "Financial Services",
-        "Insurance"
+        "Insurance",
+        "Startups"
       ],
       "fortune500": true,
-      "attendee_count": 3
+      "attendee_count": 6
     },
     {
       "name": "Ally Financial",
@@ -1253,6 +1395,15 @@
       "name": "ALO",
       "industries": [
         "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Alpha",
+      "industries": [
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -1275,6 +1426,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Altamont Capital Partners",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "AltermAInd",
       "industries": [
         "Startups",
@@ -1282,6 +1441,14 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Altria",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": true,
+      "attendee_count": 2
     },
     {
       "name": "Alumis",
@@ -1402,7 +1569,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 7
+      "attendee_count": 8
     },
     {
       "name": "American Board of Family Medicine",
@@ -1498,6 +1665,14 @@
       "attendee_count": 1
     },
     {
+      "name": "American Gaming Systems",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "American Heart Association",
       "industries": [
         "Other"
@@ -1556,6 +1731,22 @@
       "attendee_count": 3
     },
     {
+      "name": "American Red Cross",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
+    },
+    {
+      "name": "Americare Senior Living",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Americo",
       "industries": [
         "Financial Services"
@@ -1579,7 +1770,7 @@
         "Retail"
       ],
       "fortune500": true,
-      "attendee_count": 7
+      "attendee_count": 8
     },
     {
       "name": "Amgent",
@@ -1634,7 +1825,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Amrize",
+      "name": "Amrize Ltd",
       "industries": [
         "Manufacturing"
       ],
@@ -1748,12 +1939,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Andreessen Horowitz (A16Z)",
-      "industries": [],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "Andromeda Systems Incorporated",
       "industries": [
         "Government",
@@ -1817,7 +2002,10 @@
     },
     {
       "name": "Anshar Labs",
-      "industries": [],
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -1911,7 +2099,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 12
+      "attendee_count": 13
     },
     {
       "name": "Applied Materials",
@@ -1919,7 +2107,7 @@
         "Manufacturing"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "Applied Network Solutions, Inc",
@@ -2083,6 +2271,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Ariat International",
+      "industries": [
+        "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Aristocrat Technology Inc",
       "industries": [
         "Other"
@@ -2095,6 +2291,14 @@
       "industries": [
         "Education",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Arizona State Government",
+      "industries": [
+        "Government"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -2378,6 +2582,14 @@
       "attendee_count": 4
     },
     {
+      "name": "ATB Financial",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "atec spine",
       "industries": [
         "Healthcare"
@@ -2427,10 +2639,27 @@
       "attendee_count": 1
     },
     {
+      "name": "Atomic Strata",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Attesto",
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Auberge Collection",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -2443,6 +2672,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Auctionconnect & Tideform",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
     },
     {
       "name": "Audaces",
@@ -2584,10 +2822,11 @@
     {
       "name": "AutoStore",
       "industries": [
-        "Other"
+        "Other",
+        "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "AutoStore System",
@@ -2641,6 +2880,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Aventora AI",
+      "industries": [
+        "Insurance",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Avery Products Corporation",
       "industries": [
         "Manufacturing"
@@ -2670,6 +2918,12 @@
         "Startups",
         "Technology"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "AVIXA (Audiovisual and Integrated Experience Association)",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -2861,6 +3115,15 @@
       "attendee_count": 2
     },
     {
+      "name": "Bandonius Automations",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Bank Independent",
       "industries": [
         "Financial Services"
@@ -2883,10 +3146,18 @@
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 4
     },
     {
       "name": "Bank of Canada",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Bank of Hope",
       "industries": [
         "Financial Services"
       ],
@@ -2942,6 +3213,15 @@
       "attendee_count": 1
     },
     {
+      "name": "BARE Truth inc",
+      "industries": [
+        "Healthcare",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
+    },
+    {
       "name": "Baseten",
       "industries": [],
       "fortune500": false,
@@ -2981,6 +3261,23 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "Bausch + Lomb",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Bavarian Ministry of Economic Affairs",
+      "industries": [
+        "Government",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Bay Street Integrity Realty Inc.",
@@ -3042,6 +3339,15 @@
     {
       "name": "BDO LLP",
       "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Be Additive Tech",
+      "industries": [
+        "Startups",
         "Technology"
       ],
       "fortune500": false,
@@ -3206,7 +3512,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "bestbath",
@@ -3367,7 +3673,10 @@
     },
     {
       "name": "Bility",
-      "industries": [],
+      "industries": [
+        "Healthcare",
+        "Startups"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -3376,6 +3685,15 @@
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "BillyLu",
+      "industries": [
+        "Other",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -3426,6 +3744,14 @@
       "name": "Biola University",
       "industries": [
         "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Biote",
+      "industries": [
+        "Healthcare"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -3509,7 +3835,7 @@
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 3
+      "attendee_count": 4
     },
     {
       "name": "bladestack.io",
@@ -3548,11 +3874,23 @@
       "attendee_count": 1
     },
     {
+      "name": "Block",
+      "industries": [],
+      "fortune500": true,
+      "attendee_count": 1
+    },
+    {
       "name": "Blockchains, Inc.",
       "industries": [
         "Startups",
         "Technology"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Blood in the Machine",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -3571,7 +3909,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "Bloomberg Industry Group",
@@ -3675,6 +4013,23 @@
       "attendee_count": 1
     },
     {
+      "name": "Blytzpay",
+      "industries": [
+        "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "BMM Innovation Group",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "BMO",
       "industries": [
         "Financial Services"
@@ -3728,7 +4083,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Boehringer Ingelheim - USA",
@@ -3758,7 +4113,7 @@
         "Manufacturing"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "Boffman Consulting",
@@ -3838,6 +4193,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Boston Consulting Group",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Boston Dynamics",
       "industries": [
         "Technology"
@@ -3852,7 +4215,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 9
+      "attendee_count": 10
     },
     {
       "name": "Bowling Green State University",
@@ -3971,6 +4334,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Bridgebio",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Bridgeport National Bindery, Inc.",
       "industries": [
         "Manufacturing",
@@ -4032,6 +4403,12 @@
       "attendee_count": 1
     },
     {
+      "name": "Brillinsight LLC",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Brinks Home",
       "industries": [
         "Other"
@@ -4054,6 +4431,15 @@
       ],
       "fortune500": true,
       "attendee_count": 4
+    },
+    {
+      "name": "Brizz",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
     },
     {
       "name": "Broadcom",
@@ -4210,6 +4596,14 @@
       "attendee_count": 1
     },
     {
+      "name": "BYD",
+      "industries": [
+        "Automotive"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "BYOT Auto Parts",
       "industries": [
         "Automotive",
@@ -4252,6 +4646,12 @@
       "attendee_count": 1
     },
     {
+      "name": "C-smart",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 8
+    },
+    {
       "name": "Cable one inc",
       "industries": [
         "Other"
@@ -4278,6 +4678,14 @@
       "attendee_count": 2
     },
     {
+      "name": "Cal-Maine Foods, Inc.",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "CALI",
       "industries": [
         "Manufacturing",
@@ -4291,6 +4699,15 @@
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "California Association of Independent Schools",
+      "industries": [
+        "Education",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -4319,7 +4736,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 3
     },
     {
       "name": "California State University Long Beach",
@@ -4336,6 +4753,23 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "CalPrivate Bank",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Caltech",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Calver Branding",
@@ -4380,6 +4814,14 @@
       "name": "Cancer Diagnostics, Abbott (fka Exact Sciences)",
       "industries": [
         "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Candela Medical",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -4479,6 +4921,14 @@
       "attendee_count": 6
     },
     {
+      "name": "Capital One Financials",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "CAPTRUST",
       "industries": [
         "Financial Services"
@@ -4493,6 +4943,14 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Cardinal Health",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": true,
+      "attendee_count": 2
     },
     {
       "name": "Cardinalhealth.com",
@@ -4604,6 +5062,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Caryland LLC",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "CasaPerks Technologies",
       "industries": [
         "Startups",
@@ -4672,6 +5139,14 @@
       ],
       "fortune500": true,
       "attendee_count": 7
+    },
+    {
+      "name": "Caterpillar Financial Services",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Catholic Health Services of Long Island",
@@ -4848,6 +5323,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Cellebrite",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Cellular Sales",
       "industries": [
         "Retail"
@@ -4946,6 +5429,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Certainti.ai",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "CEW Communications",
       "industries": [
         "Other",
@@ -4967,6 +5459,14 @@
       "name": "CFA Institute",
       "industries": [
         "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "CGI",
+      "industries": [
+        "Government"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -5015,6 +5515,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Channel Partners Capital",
+      "industries": [
+        "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Charles Schwab",
       "industries": [],
       "fortune500": true,
@@ -5029,12 +5538,20 @@
       "attendee_count": 1
     },
     {
+      "name": "charter communication communications",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Charter communications",
       "industries": [
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Chartered Accountants Ireland",
@@ -5112,6 +5629,12 @@
       "attendee_count": 3
     },
     {
+      "name": "Children's Healthcare of Atlanta",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Children's Hope Alliance",
       "industries": [
         "Healthcare",
@@ -5160,6 +5683,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Choctaw Nation of Oklahoma",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "CHOE BROS",
       "industries": [
         "Startups",
@@ -5169,10 +5700,26 @@
       "attendee_count": 1
     },
     {
+      "name": "Christopher Newport University",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Chryselys",
       "industries": [
         "Healthcare",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "chubb",
+      "industries": [
+        "Insurance"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -5190,7 +5737,7 @@
       "name": "ChurchTechToday.com",
       "industries": [],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "CI&T",
@@ -5264,6 +5811,12 @@
       ],
       "fortune500": false,
       "attendee_count": 4
+    },
+    {
+      "name": "Cineva Films Inc.",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Cirkadis",
@@ -5349,6 +5902,14 @@
       "name": "Citrus College",
       "industries": [
         "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "City National Bank",
+      "industries": [
+        "Financial Services"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -5466,7 +6027,7 @@
         "Retail"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "CL Studios LLC",
@@ -5490,6 +6051,14 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Claremont McKenna College",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
     },
     {
       "name": "Clarins",
@@ -5601,6 +6170,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Cloud Equationa",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Cloud Security Alliance",
       "industries": [
         "Cybersecurity",
@@ -5697,6 +6275,14 @@
       "industries": [
         "Financial Services",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "CNA Insurance",
+      "industries": [
+        "Financial Services"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -5847,9 +6433,34 @@
       "attendee_count": 1
     },
     {
+      "name": "CogFlow",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Cognisen",
       "industries": [
         "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Cognizant",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": true,
+      "attendee_count": 1
+    },
+    {
+      "name": "Cohesity",
+      "industries": [
         "Technology"
       ],
       "fortune500": false,
@@ -6043,7 +6654,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 4
+      "attendee_count": 6
     },
     {
       "name": "Command Post Technologies",
@@ -6230,6 +6841,14 @@
       "attendee_count": 2
     },
     {
+      "name": "Consolidated Nuclear Security",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Consorcio Ferretero de San José S.A.",
       "industries": [
         "Other",
@@ -6321,7 +6940,24 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
+    },
+    {
+      "name": "Cordis Corp",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "CORE - Community Organized Relief Effort",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Core States Group",
@@ -6354,6 +6990,14 @@
       "industries": [
         "Financial Services",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "COREWELL HEALTH",
+      "industries": [
+        "Healthcare"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -6479,6 +7123,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Coventry University",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Cover Whale",
       "industries": [],
       "fortune500": false,
@@ -6509,9 +7161,11 @@
     },
     {
       "name": "Cox Communications",
-      "industries": [],
+      "industries": [
+        "Other"
+      ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "CPA Nova Scotia",
@@ -6550,6 +7204,12 @@
     },
     {
       "name": "Craylor Media",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Crazy Folio Pictures LLC",
       "industries": [],
       "fortune500": false,
       "attendee_count": 1
@@ -6610,7 +7270,17 @@
     },
     {
       "name": "Credence",
-      "industries": [],
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Credit One Bank",
+      "industries": [
+        "Financial Services"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -6623,12 +7293,26 @@
       "attendee_count": 2
     },
     {
+      "name": "Credo AI",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Creospan Inc",
       "industries": [
         "Technology"
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "Cricut",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "CriptoTendencia.com",
@@ -6655,17 +7339,22 @@
     {
       "name": "Cruise (General Motors)",
       "industries": [
-        "Automotive",
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "Crunchbase",
       "industries": [
         "Technology"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Crusoe",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -6735,7 +7424,16 @@
         "Manufacturing"
       ],
       "fortune500": true,
-      "attendee_count": 4
+      "attendee_count": 8
+    },
+    {
+      "name": "Curaden USA Inc.",
+      "industries": [
+        "Manufacturing",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Curaleaf",
@@ -6795,7 +7493,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 16
+      "attendee_count": 20
     },
     {
       "name": "CVS Health | Health100",
@@ -6875,12 +7573,20 @@
       "attendee_count": 1
     },
     {
+      "name": "Daisy Brand",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Dallas College",
       "industries": [
         "Education"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "Dania and Company",
@@ -6916,8 +7622,18 @@
       "attendee_count": 2
     },
     {
+      "name": "Dassault Systemes",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Dassault Systèmes",
-      "industries": [],
+      "industries": [
+        "Technology"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -6973,6 +7689,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Datafyze",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
     },
     {
       "name": "Dataiku",
@@ -7041,6 +7766,12 @@
     },
     {
       "name": "DCK",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Decelerator Media Inc.",
       "industries": [],
       "fortune500": false,
       "attendee_count": 1
@@ -7175,7 +7906,8 @@
     {
       "name": "Dell Technologies",
       "industries": [
-        "Other"
+        "Other",
+        "Technology"
       ],
       "fortune500": true,
       "attendee_count": 2
@@ -7253,7 +7985,15 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
+    },
+    {
+      "name": "Department of Defense",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Department of Taxation, Ohio",
@@ -7271,6 +8011,14 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "Department of War",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "DePaul University",
@@ -7394,6 +8142,14 @@
       "attendee_count": 1
     },
     {
+      "name": "DevRev",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "DFW INTERNATIONAL AIRPORT",
       "industries": [
         "Government"
@@ -7418,10 +8174,9 @@
       "attendee_count": 1
     },
     {
-      "name": "Diamond Lake Technologies",
+      "name": "DHS",
       "industries": [
-        "Retail",
-        "Startups"
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -7436,7 +8191,9 @@
     },
     {
       "name": "Dice",
-      "industries": [],
+      "industries": [
+        "Technology"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -7477,8 +8234,24 @@
       "attendee_count": 1
     },
     {
-      "name": "Digital.ai Software, Inc.",
+      "name": "Digital Social Hour",
       "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Digital.ai",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
+      "name": "Digital.ai Software, Inc.",
+      "industries": [
+        "Technology"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -7534,12 +8307,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Discover Bank",
-      "industries": [],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "Discover financial services",
       "industries": [
         "Financial Services"
@@ -7588,9 +8355,27 @@
       "attendee_count": 1
     },
     {
+      "name": "DK Dynamic Resources",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "DLA Piper LLP",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "DnP.ai",
+      "industries": [
+        "Other",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -7664,7 +8449,15 @@
       "attendee_count": 1
     },
     {
-      "name": "Dominican University",
+      "name": "Dollar General",
+      "industries": [
+        "Retail"
+      ],
+      "fortune500": true,
+      "attendee_count": 1
+    },
+    {
+      "name": "Dominican University of California",
       "industries": [
         "Education",
         "Startups"
@@ -7700,6 +8493,14 @@
       ],
       "fortune500": false,
       "attendee_count": 3
+    },
+    {
+      "name": "Doosan Bobcat",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Dorel Juvenile Group",
@@ -7746,6 +8547,12 @@
         "Startups",
         "Technology"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "DOUBLETOP",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -8034,6 +8841,15 @@
       "attendee_count": 1
     },
     {
+      "name": "E-Consilium Pty. Ltd.",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "EAB Global",
       "industries": [
         "Education"
@@ -8062,6 +8878,14 @@
       "name": "East Carolina University",
       "industries": [
         "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "East West Manufacturing",
+      "industries": [
+        "Manufacturing"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -8124,6 +8948,14 @@
       "industries": [
         "Education",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "eCw",
+      "industries": [
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -8285,6 +9117,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Elder Outreach",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Eldorado Broadcasting 560 AM",
       "industries": [],
       "fortune500": false,
@@ -8348,7 +9188,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 12
+      "attendee_count": 13
     },
     {
       "name": "EllisDon",
@@ -8368,9 +9208,26 @@
       "attendee_count": 1
     },
     {
+      "name": "Em Twenty6",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "Embarc",
       "industries": [
         "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Embassy of Switzerland",
+      "industries": [
+        "Government"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -8427,11 +9284,25 @@
       "attendee_count": 2
     },
     {
+      "name": "Emerson",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": true,
+      "attendee_count": 1
+    },
+    {
       "name": "Empower Services Group of Minnesota",
       "industries": [
         "Financial Services",
         "Startups"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Empowering our Minds",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -8632,6 +9503,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Enyecontrols Corp",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Enzumo",
       "industries": [
         "Startups",
@@ -8662,6 +9542,15 @@
       "name": "Epsilon",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Equabli",
+      "industries": [
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -8738,6 +9627,15 @@
       "name": "ESCP Business school",
       "industries": [
         "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "ESM Technology",
+      "industries": [
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -8881,6 +9779,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Evolution Engineering",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
+    },
+    {
       "name": "EWE AG",
       "industries": [
         "Other"
@@ -8919,6 +9826,12 @@
       "industries": [
         "Technology"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Exaltitude",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -9193,7 +10106,10 @@
     },
     {
       "name": "Faros",
-      "industries": [],
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
       "fortune500": false,
       "attendee_count": 2
     },
@@ -9360,7 +10276,7 @@
         "Retail"
       ],
       "fortune500": true,
-      "attendee_count": 5
+      "attendee_count": 6
     },
     {
       "name": "Fengate Asset Management",
@@ -9391,6 +10307,15 @@
       "name": "Ferrovial",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "FERZ, Inc.",
+      "industries": [
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -9443,7 +10368,7 @@
         "Financial Services"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "FIDELITY INVESTMENTS",
@@ -9452,7 +10377,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 19
+      "attendee_count": 21
     },
     {
       "name": "Fidelity Labs",
@@ -9486,6 +10411,12 @@
       ],
       "fortune500": false,
       "attendee_count": 6
+    },
+    {
+      "name": "Fin",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Final",
@@ -9528,7 +10459,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "Finanta",
@@ -9543,6 +10474,14 @@
       "name": "Finatext Ltd.",
       "industries": [
         "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Fincantieri Marine Group",
+      "industries": [
+        "Manufacturing"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -9575,6 +10514,20 @@
       "attendee_count": 2
     },
     {
+      "name": "Fintechs Futures LLC",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "First American Title",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "First Bank Texas",
       "industries": [
         "Financial Services",
@@ -9589,7 +10542,7 @@
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "First Financial Credit Union",
@@ -9625,6 +10578,15 @@
       ],
       "fortune500": false,
       "attendee_count": 5
+    },
+    {
+      "name": "FirstNet (DOC)",
+      "industries": [
+        "Government",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Fisch Solutions Inc",
@@ -9731,6 +10693,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Florida International University",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Florida Keys Resorts, LLC",
       "industries": [
         "Other",
@@ -9756,12 +10726,20 @@
       "attendee_count": 1
     },
     {
+      "name": "Florida State University",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Florida Virtual School",
       "industries": [
         "Education"
       ],
       "fortune500": false,
-      "attendee_count": 3
+      "attendee_count": 7
     },
     {
       "name": "Florida Virtual School & FlexPoint Education",
@@ -9797,6 +10775,15 @@
       "attendee_count": 3
     },
     {
+      "name": "Flux Analytics",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "FM",
       "industries": [
         "Insurance"
@@ -9805,7 +10792,23 @@
       "attendee_count": 1
     },
     {
+      "name": "FM Global",
+      "industries": [
+        "Insurance"
+      ],
+      "fortune500": true,
+      "attendee_count": 1
+    },
+    {
       "name": "Focus Financial Partners",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Focus Partners",
       "industries": [
         "Financial Services"
       ],
@@ -9864,7 +10867,7 @@
         "Automotive"
       ],
       "fortune500": true,
-      "attendee_count": 3
+      "attendee_count": 4
     },
     {
       "name": "Ford Motors",
@@ -9981,6 +10984,14 @@
       "attendee_count": 2
     },
     {
+      "name": "Fortrea",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Fortress Investment Group",
       "industries": [
         "Financial Services"
@@ -9993,6 +11004,12 @@
       "industries": [
         "Other"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Forum AI",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -10025,6 +11042,14 @@
       "name": "Fox News",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Fozzy Group",
+      "industries": [
+        "Retail"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -10131,6 +11156,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Freshworks",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Freudenberg Medical",
       "industries": [
         "Manufacturing"
@@ -10172,6 +11205,14 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "Frontline Road Safety",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "FUJIFILM North America Corporation",
@@ -10366,6 +11407,14 @@
       "attendee_count": 8
     },
     {
+      "name": "Galp",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Gamechange Solar",
       "industries": [
         "Other"
@@ -10451,6 +11500,14 @@
       "name": "GE Appliances",
       "industries": [
         "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "GEICO",
+      "industries": [
+        "Financial Services"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -10584,7 +11641,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Genomii Lab Ltd.",
@@ -10611,6 +11668,14 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "George Mason University",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "George P. Johnson",
@@ -10660,9 +11725,11 @@
     },
     {
       "name": "Gilead",
-      "industries": [],
+      "industries": [
+        "Healthcare"
+      ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Gilead Sciences",
@@ -10711,6 +11778,14 @@
       "attendee_count": 2
     },
     {
+      "name": "Glidewell Laboratories",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Global Aerospace Inc",
       "industries": [
         "Financial Services"
@@ -10720,6 +11795,15 @@
     },
     {
       "name": "GLOBAL AI AU",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Global IT Resources LLC",
       "industries": [
         "Startups",
         "Technology"
@@ -10750,6 +11834,12 @@
       "industries": [
         "Cybersecurity"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Global Sports Report LLC",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -10864,12 +11954,13 @@
       "attendee_count": 1
     },
     {
-      "name": "Goodleap",
+      "name": "GoodLeap LLC.",
       "industries": [
+        "Financial Services",
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Goodwill Industries International",
@@ -10893,7 +11984,7 @@
       "name": "Google Cloud",
       "industries": [],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "Google DeepMind",
@@ -10955,6 +12046,14 @@
       "name": "Government Technology Agency",
       "industries": [
         "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "govt",
+      "industries": [
+        "Cybersecurity"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -11083,6 +12182,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Graymont",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Great Plains Bank",
       "industries": [
         "Financial Services"
@@ -11199,6 +12306,12 @@
         "Startups",
         "VCs"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Greg Anderson Photography",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -11336,7 +12449,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 6
+      "attendee_count": 7
     },
     {
       "name": "GTS Virtual Health",
@@ -11365,6 +12478,14 @@
     },
     {
       "name": "Guild",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Gwangju Institute of Science and Technology",
       "industries": [
         "Education"
       ],
@@ -11469,7 +12590,17 @@
     {
       "name": "Hanyang University",
       "industries": [
+        "Healthcare",
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
+      "name": "Hapax",
+      "industries": [
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -11654,7 +12785,7 @@
         "Healthcare"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 4
     },
     {
       "name": "HD Flash News",
@@ -11695,6 +12826,14 @@
       "industries": [
         "Healthcare",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Helion Energy",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -11755,6 +12894,15 @@
       "attendee_count": 1
     },
     {
+      "name": "hera ai",
+      "industries": [
+        "Automotive",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "Heritage Bank of Commerce",
       "industries": [
         "Financial Services"
@@ -11774,6 +12922,22 @@
     {
       "name": "Heven AeroTech",
       "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Hewlett Packard Enterprise",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": true,
+      "attendee_count": 1
+    },
+    {
+      "name": "Hiab USA",
+      "industries": [
+        "Manufacturing"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -11882,6 +13046,14 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "Hinge Health",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Hire One Vet",
@@ -12011,13 +13183,21 @@
       "attendee_count": 10
     },
     {
+      "name": "Honda Development and MFG of America LLC",
+      "industries": [
+        "Automotive"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Honeywell",
       "industries": [
         "Manufacturing",
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 3
+      "attendee_count": 4
     },
     {
       "name": "Honor Credit Union",
@@ -12078,6 +13258,14 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "House of Commons Of  Canada",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Housing Resources of Western Colorado",
@@ -12147,6 +13335,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Humana",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": true,
+      "attendee_count": 2
+    },
+    {
       "name": "Humanify Inc.",
       "industries": [
         "Startups",
@@ -12168,7 +13364,7 @@
       "name": "Humans of AI",
       "industries": [],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Hunt Companies, Inc.",
@@ -12201,6 +13397,12 @@
       ],
       "fortune500": false,
       "attendee_count": 3
+    },
+    {
+      "name": "Huntington National Bank",
+      "industries": [],
+      "fortune500": true,
+      "attendee_count": 1
     },
     {
       "name": "Hurix Systems Private Limited",
@@ -12265,6 +13467,12 @@
       "attendee_count": 2
     },
     {
+      "name": "Hyundai Global Software Center",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "IA Financial Group",
       "industries": [
         "Financial Services"
@@ -12302,12 +13510,18 @@
       "attendee_count": 1
     },
     {
+      "name": "iblnews.org",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "IBM",
       "industries": [
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "Ibotta",
@@ -12384,6 +13598,15 @@
       "attendee_count": 1
     },
     {
+      "name": "IDWTEAM LLC",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "IEEE Computer Society Magazine",
       "industries": [],
       "fortune500": false,
@@ -12405,6 +13628,14 @@
         "Technology"
       ],
       "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "IFF",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": true,
       "attendee_count": 1
     },
     {
@@ -12597,6 +13828,12 @@
       "attendee_count": 1
     },
     {
+      "name": "Infinite Loop Labs",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Infinium",
       "industries": [
         "Other",
@@ -12709,6 +13946,15 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "INQU LLC",
+      "industries": [
+        "Government",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "INSA",
@@ -12957,14 +14203,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Intralox",
-      "industries": [
-        "Manufacturing"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "Intuit Credit Karma",
       "industries": [
         "Technology"
@@ -13005,7 +14243,24 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 3
+      "attendee_count": 4
+    },
+    {
+      "name": "Invesco",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
+      "name": "Investment NSW",
+      "industries": [
+        "Government",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Ionic Studios",
@@ -13092,6 +14347,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Island",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Island Innovation LLC",
       "industries": [
         "Startups",
@@ -13112,6 +14375,15 @@
       "name": "ISO New England, Inc.",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "iSonic.ai",
+      "industries": [
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -13197,6 +14469,15 @@
       "attendee_count": 1
     },
     {
+      "name": "J. P. Morgan Chase",
+      "industries": [
+        "Financial Services",
+        "Retail"
+      ],
+      "fortune500": true,
+      "attendee_count": 29
+    },
+    {
       "name": "J.C. Hart",
       "industries": [
         "Other",
@@ -13211,7 +14492,7 @@
         "Manufacturing"
       ],
       "fortune500": true,
-      "attendee_count": 3
+      "attendee_count": 4
     },
     {
       "name": "Jack Tyler Engineering",
@@ -13231,6 +14512,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Jacksonville Electric Authority",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "JAMS",
       "industries": [
         "Other"
@@ -13242,6 +14531,15 @@
       "name": "JAMS Alternative Dispute Resolution",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Janae AI",
+      "industries": [
+        "Other",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -13438,6 +14736,14 @@
       "attendee_count": 2
     },
     {
+      "name": "John Hancock Insurance Company",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "JohnDow Industries",
       "industries": [
         "Automotive",
@@ -13519,15 +14825,6 @@
       ],
       "fortune500": false,
       "attendee_count": 2
-    },
-    {
-      "name": "JP Morgan & Chase",
-      "industries": [
-        "Financial Services",
-        "Retail"
-      ],
-      "fortune500": true,
-      "attendee_count": 27
     },
     {
       "name": "JP Morgan Chase, Private Bank",
@@ -13643,10 +14940,11 @@
     {
       "name": "Kaiser Permanente",
       "industries": [
+        "Healthcare",
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 3
     },
     {
       "name": "Kalsec Inc.",
@@ -13711,10 +15009,11 @@
     {
       "name": "Kaspar Companies",
       "industries": [
-        "Manufacturing"
+        "Manufacturing",
+        "Other"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Kayne Ander Capital Advisors",
@@ -13769,14 +15068,6 @@
       "name": "Keenan",
       "industries": [
         "Financial Services"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Keenan / Gallagher",
-      "industries": [
-        "Insurance"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -13943,7 +15234,7 @@
         "Manufacturing"
       ],
       "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Klamath Orthopedic Clinic",
@@ -14014,6 +15305,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Kogniv LLC",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Kohls Inc",
       "industries": [
         "Retail"
@@ -14057,9 +15357,19 @@
     },
     {
       "name": "Kore.ai",
-      "industries": [],
+      "industries": [
+        "Healthcare"
+      ],
       "fortune500": false,
       "attendee_count": 5
+    },
+    {
+      "name": "Korea University",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Korean Standards Association",
@@ -14069,15 +15379,6 @@
       ],
       "fortune500": false,
       "attendee_count": 2
-    },
-    {
-      "name": "KOSATEC Empowering Global Innovation GmbH",
-      "industries": [
-        "Retail",
-        "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 3
     },
     {
       "name": "KOSTAL OF AMERICA INC",
@@ -14239,6 +15540,14 @@
       "attendee_count": 1
     },
     {
+      "name": "labvorp",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Lachoge Boutique",
       "industries": [
         "Retail",
@@ -14275,6 +15584,15 @@
       "attendee_count": 3
     },
     {
+      "name": "Laketown Electric",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "lam",
       "industries": [
         "Technology"
@@ -14304,6 +15622,14 @@
       "industries": [
         "Other",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Landscape Development",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -14381,7 +15707,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "Lawrence Berkeley National Lab",
@@ -14441,6 +15767,14 @@
       ],
       "fortune500": false,
       "attendee_count": 3
+    },
+    {
+      "name": "LDS church",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Lea+Elliott, Inc.",
@@ -14527,6 +15861,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Leatherman",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 7
+    },
+    {
       "name": "Lee, Hong, Degerman, Kang & Waimey",
       "industries": [
         "Other",
@@ -14539,6 +15881,15 @@
       "name": "Legal & General Investment Management",
       "industries": [
         "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Legal Tek, LLC",
+      "industries": [
+        "Other",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -14656,6 +16007,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Libero",
+      "industries": [
+        "Cybersecurity",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "Liberty Mutual",
       "industries": [
         "Financial Services",
@@ -14671,7 +16031,7 @@
         "Insurance"
       ],
       "fortune500": true,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "Liberty Mutual Technology",
@@ -14731,6 +16091,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Lilac",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Lima Bean Techonologies",
@@ -14850,6 +16219,14 @@
       "attendee_count": 1
     },
     {
+      "name": "loanDepot",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Loblaw",
       "industries": [
         "Retail"
@@ -14866,7 +16243,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 11
+      "attendee_count": 12
     },
     {
       "name": "Loft Orbital",
@@ -15119,6 +16496,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Lynx Analytics",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Lytx Inc.",
       "industries": [
         "Automotive",
@@ -15145,6 +16531,15 @@
       "name": "M/Cap Advisors",
       "industries": [
         "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "MacArthur Foundation",
+      "industries": [
+        "Other",
         "Startups"
       ],
       "fortune500": false,
@@ -15249,6 +16644,14 @@
       "attendee_count": 18
     },
     {
+      "name": "Major League Soccer",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Major US Bank",
       "industries": [
         "Financial Services"
@@ -15289,6 +16692,15 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "Manhattan Institute for Policy Research, Inc.",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Manulife Johnhancock",
@@ -15456,6 +16868,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Marymount University",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Mass General Brigham",
       "industries": [
         "Healthcare",
@@ -15508,9 +16928,25 @@
       "attendee_count": 1
     },
     {
+      "name": "Mathnasium",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Matrix Consulting, LLC",
       "industries": [
         "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Matrix USA",
+      "industries": [
         "Technology"
       ],
       "fortune500": false,
@@ -15691,7 +17127,7 @@
         "Retail"
       ],
       "fortune500": true,
-      "attendee_count": 6
+      "attendee_count": 8
     },
     {
       "name": "Mead Johnson Nutrition",
@@ -15768,6 +17204,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Meijer",
+      "industries": [
+        "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "MEM",
       "industries": [
         "Financial Services"
@@ -15782,6 +17226,14 @@
       ],
       "fortune500": false,
       "attendee_count": 3
+    },
+    {
+      "name": "MemorialCare Healthsystem",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Menon And Menon",
@@ -15811,6 +17263,14 @@
       "name": "Meow Wolf Inc",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Mercedes Benz research and development North America",
+      "industries": [
+        "Automotive"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -15951,6 +17411,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Metro Point Technology LLC",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Metro Sales Inc.",
       "industries": [
         "Technology"
@@ -16073,7 +17542,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 5
     },
     {
       "name": "Middlesex Water",
@@ -16142,6 +17611,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Mindgov",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "Minedco",
       "industries": [
         "Other",
@@ -16173,6 +17651,23 @@
       "attendee_count": 1
     },
     {
+      "name": "MISO Energy",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Missouri River Energy Services",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "MISTRAL AI",
       "industries": [],
       "fortune500": false,
@@ -16189,6 +17684,14 @@
     },
     {
       "name": "MIT Media Lab",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "MIT Sloan",
       "industries": [
         "Education"
       ],
@@ -16253,6 +17756,15 @@
       "attendee_count": 1
     },
     {
+      "name": "MizuWatch",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "MNGI Digestive Health",
       "industries": [
         "Healthcare"
@@ -16278,12 +17790,27 @@
       "attendee_count": 1
     },
     {
+      "name": "ModelOp",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "ModMed",
       "industries": [
         "Healthcare"
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Modular Technology Group",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Modus Persona",
@@ -16330,6 +17857,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "momentiq llc",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Momentum Communications",
@@ -16394,10 +17930,11 @@
     {
       "name": "Montclair State University",
       "industries": [
-        "Education"
+        "Education",
+        "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Moody's",
@@ -16497,7 +18034,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Mow Technologies LLC",
@@ -16565,6 +18102,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Multimarcas Consórcios",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Multiplai",
       "industries": [],
       "fortune500": false,
@@ -16583,6 +18129,24 @@
         "Startups"
       ],
       "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Municipal Employees' Annuity and Benefit Fund of Chicago",
+      "industries": [
+        "Financial Services",
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
+      "name": "Mutual of Omaha",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": true,
       "attendee_count": 1
     },
     {
@@ -16640,6 +18204,7 @@
     {
       "name": "N/A",
       "industries": [
+        "Cybersecurity",
         "Financial Services",
         "Healthcare",
         "Other",
@@ -16647,7 +18212,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "NAES Corporation",
@@ -16656,6 +18221,15 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "NAL Technologies",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "NaomiTattoos Inc",
@@ -16676,6 +18250,22 @@
       "attendee_count": 1
     },
     {
+      "name": "NASA Federal Credit Union",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "NASA JPL",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "NASB",
       "industries": [
         "Insurance"
@@ -16688,6 +18278,12 @@
       "industries": [
         "Technology"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Nashvegas.com/j3media",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -16723,14 +18319,24 @@
       "attendee_count": 1
     },
     {
-      "name": "National Center for Supercomputing Applications",
+      "name": "National Football League (NFL)",
       "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
     {
-      "name": "National Football League (NFL)",
-      "industries": [],
+      "name": "National Grid",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "National Institute of Advanced Industrial Science and Technology",
+      "industries": [
+        "Government"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -16799,6 +18405,22 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "NATIONAL UNIVERSITY HEALTH SYSTEM",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
+    },
+    {
+      "name": "Nationale Nederlanden",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "NationsBenefits",
@@ -16881,7 +18503,7 @@
         "Financial Services"
       ],
       "fortune500": false,
-      "attendee_count": 13
+      "attendee_count": 14
     },
     {
       "name": "NBC News",
@@ -17116,6 +18738,15 @@
       "attendee_count": 1
     },
     {
+      "name": "NetWatch.AI",
+      "industries": [
+        "Cybersecurity",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Network Optix",
       "industries": [],
       "fortune500": false,
@@ -17125,6 +18756,14 @@
       "name": "Neuberger Berman",
       "industries": [
         "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Neurocrine Biosciences Inc.",
+      "industries": [
+        "Healthcare"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -17182,6 +18821,15 @@
       "attendee_count": 3
     },
     {
+      "name": "New Opportunities Charter School",
+      "industries": [
+        "Education",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "New Pig Corporation",
       "industries": [
         "Manufacturing"
@@ -17207,7 +18855,9 @@
     },
     {
       "name": "New York Life Insurance Company",
-      "industries": [],
+      "industries": [
+        "Insurance"
+      ],
       "fortune500": true,
       "attendee_count": 1
     },
@@ -17328,6 +18978,14 @@
       "attendee_count": 1
     },
     {
+      "name": "NGA",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "NGC",
       "industries": [
         "Manufacturing"
@@ -17403,7 +19061,7 @@
         "Automotive"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 3
     },
     {
       "name": "NITCO Inc.",
@@ -17418,6 +19076,15 @@
       "name": "Nitori Holdings Co.,Ltd.",
       "industries": [
         "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
+      "name": "Nivasapro.ai",
+      "industries": [
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 2
@@ -17467,6 +19134,14 @@
       "attendee_count": 1
     },
     {
+      "name": "NN group",
+      "industries": [
+        "Insurance"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "no company currently but working on a lot of AI side projects.",
       "industries": [
         "Startups",
@@ -17488,6 +19163,14 @@
       "industries": [
         "Other",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Noblis",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -17657,7 +19340,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "Northrop Grummsn",
@@ -17744,8 +19427,19 @@
       "attendee_count": 1
     },
     {
-      "name": "Notion Labs",
-      "industries": [],
+      "name": "Norwich University Applied Research Institutes",
+      "industries": [
+        "Cybersecurity",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Notion",
+      "industries": [
+        "Technology"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -17878,6 +19572,14 @@
       "name": "NTT DATA, Inc",
       "industries": [
         "Cybersecurity"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Nutanix Inc.",
+      "industries": [
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -18027,6 +19729,15 @@
       "attendee_count": 2
     },
     {
+      "name": "Object Edge Inc.",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Obot AI",
       "industries": [
         "Startups",
@@ -18034,6 +19745,23 @@
       ],
       "fortune500": false,
       "attendee_count": 5
+    },
+    {
+      "name": "Ocean Reef Community Association",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
+      "name": "Ochsner Health",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Odyssey",
@@ -18053,6 +19781,14 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "Office of Inspector General HHSC",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Office of Insurance & Safety Fire Commissioner",
@@ -18111,6 +19847,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Omnicell Inc.",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Omnicom",
       "industries": [
         "Technology"
@@ -18145,12 +19889,18 @@
       "attendee_count": 1
     },
     {
+      "name": "One Roadmap",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Onemain Financial",
       "industries": [
         "Financial Services"
       ],
       "fortune500": false,
-      "attendee_count": 3
+      "attendee_count": 4
     },
     {
       "name": "OneMain Financials",
@@ -18248,7 +19998,16 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
+    },
+    {
+      "name": "openobscure.ai",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "OpenResearch",
@@ -18342,6 +20101,14 @@
       ],
       "fortune500": false,
       "attendee_count": 3
+    },
+    {
+      "name": "Optum Services (part of Unitedhealth group)",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Optum technologies",
@@ -18513,12 +20280,13 @@
       "attendee_count": 1
     },
     {
-      "name": "Outdoorsy",
+      "name": "Outdoorsy Group",
       "industries": [
-        "Insurance"
+        "Insurance",
+        "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 3
     },
     {
       "name": "Outdoorsy Group, Outdoorsy & Roamly",
@@ -18558,6 +20326,14 @@
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Oxy",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -18609,7 +20385,7 @@
         "Insurance"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 5
     },
     {
       "name": "Pacific Northwest National Laboratory",
@@ -18827,6 +20603,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Parliament OF DR CONGO",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Parsons Corporation",
       "industries": [
         "Other"
@@ -18911,20 +20695,21 @@
       "attendee_count": 1
     },
     {
-      "name": "Payoneer",
-      "industries": [
-        "Financial Services"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "PayPal",
       "industries": [
         "Financial Services"
       ],
       "fortune500": true,
       "attendee_count": 3
+    },
+    {
+      "name": "PayrollOrg",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Payworks",
@@ -18959,6 +20744,14 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "PDS Health",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Peace4Kids",
@@ -19015,6 +20808,30 @@
       "name": "Peckham",
       "industries": [
         "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Peel Regional Police",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Pegasystems",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "PenFed Credit Union",
+      "industries": [
+        "Financial Services"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -19080,7 +20897,7 @@
       "name": "People Managing People",
       "industries": [],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "PeopleReign",
@@ -19090,7 +20907,9 @@
     },
     {
       "name": "PepsiCo",
-      "industries": [],
+      "industries": [
+        "Other"
+      ],
       "fortune500": true,
       "attendee_count": 2
     },
@@ -19157,7 +20976,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 11
+      "attendee_count": 12
     },
     {
       "name": "PFU America Inc. (Ricoh Company)",
@@ -19262,6 +21081,14 @@
       "attendee_count": 2
     },
     {
+      "name": "Piedmont Healthcare",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
+    },
+    {
       "name": "Pilot",
       "industries": [
         "Other"
@@ -19348,10 +21175,11 @@
     {
       "name": "Platform Accounting Group",
       "industries": [
-        "Financial Services"
+        "Financial Services",
+        "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "PlayCore",
@@ -19494,6 +21322,12 @@
       "attendee_count": 2
     },
     {
+      "name": "Polymarket",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Polynesian Cultural Center",
       "industries": [
         "Other"
@@ -19574,15 +21408,6 @@
       "name": "Power Truss",
       "industries": [
         "Manufacturing",
-        "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Power Utility Products Company",
-      "industries": [
-        "Retail",
         "Startups"
       ],
       "fortune500": false,
@@ -19673,6 +21498,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Pretium Packaging",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Priceline",
       "industries": [
         "Other"
@@ -19718,7 +21551,19 @@
     },
     {
       "name": "Privateer Space",
-      "industries": [],
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "PRmediaNow",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -19772,6 +21617,15 @@
       "attendee_count": 1
     },
     {
+      "name": "ProductQuest.AI",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "ProdZen AI",
       "industries": [
         "Startups",
@@ -19806,6 +21660,15 @@
       "attendee_count": 2
     },
     {
+      "name": "Project Disrupt",
+      "industries": [
+        "Education",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Project Management Institute",
       "industries": [
         "Education"
@@ -19835,7 +21698,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "Promptwise",
@@ -19850,6 +21713,15 @@
       "name": "ProShares",
       "industries": [
         "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Prosp",
+      "industries": [
+        "Other",
         "Startups"
       ],
       "fortune500": false,
@@ -19888,6 +21760,14 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "Protegrity USA, Inc.",
+      "industries": [
+        "Cybersecurity"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Providence Enterprises",
@@ -19950,6 +21830,15 @@
       "attendee_count": 1
     },
     {
+      "name": "PsychArmor",
+      "industries": [
+        "Education",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Public Broadcasting Service (PB)",
       "industries": [
         "Other"
@@ -19994,6 +21883,14 @@
       ],
       "fortune500": false,
       "attendee_count": 3
+    },
+    {
+      "name": "Purdue University",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Purple",
@@ -20070,14 +21967,6 @@
       "name": "Qandaba",
       "industries": [
         "Startups",
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "QASource",
-      "industries": [
         "Technology"
       ],
       "fortune500": false,
@@ -20167,6 +22056,24 @@
       "name": "Quartz Health Solutions",
       "industries": [
         "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "quatrodois",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Query Health",
+      "industries": [
+        "Healthcare",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -20470,6 +22377,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Reborg",
+      "industries": [
+        "Cybersecurity",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Rechargeasia Corp",
       "industries": [],
       "fortune500": false,
@@ -20498,7 +22414,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "Red Ventures",
@@ -20610,7 +22526,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "Reindeer",
@@ -20708,6 +22624,12 @@
       "attendee_count": 1
     },
     {
+      "name": "Reshift Digital",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Resilience Media",
       "industries": [],
       "fortune500": false,
@@ -20743,7 +22665,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Retirewise AI",
@@ -20789,7 +22711,10 @@
     },
     {
       "name": "Rhoda AI",
-      "industries": [],
+      "industries": [
+        "Other",
+        "Startups"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -20937,6 +22862,15 @@
       "name": "Rivargo & i2VC",
       "industries": [
         "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Rivas AI Lab",
+      "industries": [
+        "Cybersecurity",
         "Startups"
       ],
       "fortune500": false,
@@ -21158,6 +23092,14 @@
       "attendee_count": 3
     },
     {
+      "name": "Royal Care",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Royal Oak Ford",
       "industries": [
         "Automotive",
@@ -21206,6 +23148,14 @@
       "attendee_count": 7
     },
     {
+      "name": "RTX/Collins Aerospace",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Ruder Finn",
       "industries": [
         "Technology"
@@ -21229,10 +23179,24 @@
       "attendee_count": 1
     },
     {
+      "name": "Runway",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "RV Technology Consulting",
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "RXO",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -21389,6 +23353,12 @@
       "attendee_count": 1
     },
     {
+      "name": "SambaNova",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Samio Systems",
       "industries": [],
       "fortune500": false,
@@ -21454,7 +23424,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "San Joaquin General Hospital | Kaiser Permanente",
@@ -21477,7 +23447,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 6
+      "attendee_count": 7
     },
     {
       "name": "Sandia National Laboratory",
@@ -21494,7 +23464,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "Sandia Natl. Labs.",
@@ -21562,6 +23532,14 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Santander",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Santander Bank Polska",
@@ -21738,6 +23716,14 @@
       "attendee_count": 1
     },
     {
+      "name": "ScramSystems",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
       "name": "Scrunch",
       "industries": [
         "Startups",
@@ -21772,6 +23758,14 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Seaman Corporation",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Seamless Drywall & Coatings, Inc.",
@@ -21813,6 +23807,12 @@
       "industries": [
         "Financial Services"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "SecurityOrb LLC",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -21917,6 +23917,23 @@
       "attendee_count": 1
     },
     {
+      "name": "Seoul National University of Science & Technology",
+      "industries": [
+        "Education",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Sephora USA",
+      "industries": [
+        "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Sequel.io",
       "industries": [
         "Startups",
@@ -21949,6 +23966,15 @@
       ],
       "fortune500": true,
       "attendee_count": 1
+    },
+    {
+      "name": "ServiceTitan",
+      "industries": [
+        "Other",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "SES AI",
@@ -22171,6 +24197,12 @@
       "attendee_count": 1
     },
     {
+      "name": "Silver Creek",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Silver Fox USA",
       "industries": [
         "Other",
@@ -22264,6 +24296,14 @@
     {
       "name": "Siteimprove A/S",
       "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "SitusAMC",
+      "industries": [
+        "Financial Services"
+      ],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -22398,6 +24438,15 @@
       "attendee_count": 1
     },
     {
+      "name": "SmartID",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "smartShift Technologies, Inc.",
       "industries": [
         "Technology"
@@ -22425,6 +24474,15 @@
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "SMILE Payee Services, Inc.",
+      "industries": [
+        "Other",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -22461,7 +24519,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Snap",
@@ -22647,6 +24705,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Sound Exchange",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "SOUND&COLOUR",
       "industries": [],
       "fortune500": false,
@@ -22658,7 +24724,7 @@
         "Education"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "Southern Bank",
@@ -22724,7 +24790,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "Southwest Airlines Co",
@@ -22840,6 +24906,23 @@
       "attendee_count": 1
     },
     {
+      "name": "Spectrum",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Spectrum Equity",
+      "industries": [
+        "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Spectrum Industries",
       "industries": [
         "Automotive",
@@ -22864,6 +24947,16 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "SPIE",
+      "industries": [
+        "Education",
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Spire Consulting Group",
@@ -22958,6 +25051,21 @@
       "attendee_count": 4
     },
     {
+      "name": "Stackpane",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Stahl-AI",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Staircase Studios AI",
       "industries": [
         "Other",
@@ -22969,10 +25077,11 @@
     {
       "name": "Stand Together",
       "industries": [
-        "Education"
+        "Education",
+        "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 10
+      "attendee_count": 11
     },
     {
       "name": "Stanford",
@@ -22997,7 +25106,13 @@
         "Education"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
+    },
+    {
+      "name": "Stanford University & Workhelix",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Stanley Black & Decker",
@@ -23035,10 +25150,11 @@
     {
       "name": "Starbucks",
       "industries": [
+        "Other",
         "Retail"
       ],
       "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Starcloud",
@@ -23082,10 +25198,11 @@
     {
       "name": "State Compensation Insurance Fund",
       "industries": [
+        "Government",
         "Insurance"
       ],
       "fortune500": false,
-      "attendee_count": 10
+      "attendee_count": 11
     },
     {
       "name": "State Farm",
@@ -23219,6 +25336,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Stevens Institute of Technology",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Steward Machine",
       "industries": [
         "Manufacturing"
@@ -23291,6 +25416,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Stripe",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Stroud Ideas LLC",
       "industries": [
         "Education",
@@ -23331,6 +25464,14 @@
       "industries": [
         "Other",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Style Textile",
+      "industries": [
+        "Manufacturing"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -23477,6 +25618,12 @@
       "attendee_count": 1
     },
     {
+      "name": "svm",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Swatski Consulting",
       "industries": [
         "Other",
@@ -23490,6 +25637,14 @@
       "industries": [
         "Government",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Swift Transportation",
+      "industries": [
+        "Retail"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -23671,12 +25826,12 @@
       "attendee_count": 4
     },
     {
-      "name": "T-MOBILE",
+      "name": "T-Mobile Inc",
       "industries": [
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 3
+      "attendee_count": 5
     },
     {
       "name": "T. White Parker",
@@ -23777,10 +25932,27 @@
       "attendee_count": 1
     },
     {
+      "name": "Tanis Brush",
+      "industries": [
+        "Manufacturing",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Tapitinc",
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Tarian",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -23797,6 +25969,15 @@
       "name": "Tate Inc",
       "industries": [
         "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Tatto Forma",
+      "industries": [
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -23835,6 +26016,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Tax.com",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "TBA",
       "industries": [],
       "fortune500": false,
@@ -23846,6 +26035,12 @@
         "Startups",
         "Technology"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "TBW Advisors LLC & Computer Talk Radio",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -23924,6 +26119,12 @@
         "Startups",
         "VCs"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "teamly.to",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -24151,16 +26352,11 @@
       "name": "Tennessee Valley Authority",
       "industries": [
         "Government",
+        "Other",
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 12
-    },
-    {
-      "name": "Tensor Auto",
-      "industries": [],
-      "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 14
     },
     {
       "name": "Terrana Biosciences",
@@ -24185,6 +26381,12 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "TESLA, Inc.",
+      "industries": [],
+      "fortune500": true,
+      "attendee_count": 1
     },
     {
       "name": "Test Rite Products",
@@ -24249,6 +26451,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Texas Health Resources",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Texas Partners Bank",
       "industries": [
         "Financial Services",
@@ -24269,6 +26479,14 @@
       "name": "Texas Tech University",
       "industries": [
         "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Texas Tech University Health Sciences Center",
+      "industries": [
+        "Healthcare"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -24425,7 +26643,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 7
+      "attendee_count": 10
     },
     {
       "name": "The Cigna Group",
@@ -24562,6 +26780,12 @@
       "attendee_count": 1
     },
     {
+      "name": "The Hot Path",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "The Institute for Lifelong Learning & Workforce Innovation",
       "industries": [
         "Education",
@@ -24574,6 +26798,15 @@
       "name": "The Institute of Electrical and Electronics Engineers, Incorporated",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "The Kidney Experts, PLLC",
+      "industries": [
+        "Healthcare",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -24598,7 +26831,7 @@
         "Cybersecurity"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "The National WWII Museum",
@@ -24763,6 +26996,23 @@
       "attendee_count": 2
     },
     {
+      "name": "The Spotlight Initiative Inc.",
+      "industries": [
+        "Education",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "The Supreme Industries Limited",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "The Susan Thompson Buffett Foundation",
       "industries": [
         "Other",
@@ -24786,6 +27036,12 @@
         "Healthcare",
         "Startups"
       ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "The Tech News Source",
+      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -24883,7 +27139,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "The Warren Group/Banker and Tradesman",
@@ -24936,10 +27192,19 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 5
+      "attendee_count": 6
     },
     {
       "name": "THINKLUSIVE INC",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "ThinkOpen",
       "industries": [
         "Startups",
         "Technology"
@@ -24960,7 +27225,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "This Week in AI",
@@ -25096,13 +27361,19 @@
       "attendee_count": 1
     },
     {
+      "name": "Tigon Advisory Corp",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "TikTok",
       "industries": [
         "Cybersecurity",
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 3
+      "attendee_count": 4
     },
     {
       "name": "TikTok USDS JV",
@@ -25116,6 +27387,15 @@
       "name": "Tileagd Technologies, Inc",
       "industries": [
         "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Tilian AI",
+      "industries": [
+        "Education",
         "Startups"
       ],
       "fortune500": false,
@@ -25138,6 +27418,15 @@
       "attendee_count": 1
     },
     {
+      "name": "TIMxAI",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
+    },
+    {
       "name": "Tinman Creative Productions",
       "industries": [
         "Other",
@@ -25158,6 +27447,14 @@
       "name": "TKC Holdings",
       "industries": [
         "Retail"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "TM Global Services",
+      "industries": [
+        "Financial Services"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -25231,7 +27528,16 @@
       "attendee_count": 1
     },
     {
-      "name": "Tokio Marine Group",
+      "name": "Tokio Marine Holdings",
+      "industries": [
+        "Financial Services",
+        "Insurance"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
+    },
+    {
+      "name": "Tokio Marine North American Services",
       "industries": [
         "Insurance"
       ],
@@ -25424,6 +27730,12 @@
       "attendee_count": 1
     },
     {
+      "name": "Tradeshowlife",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "TradeStation",
       "industries": [
         "Financial Services",
@@ -25493,6 +27805,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Trefilia Capital",
+      "industries": [
+        "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Trellance",
       "industries": [],
       "fortune500": false,
@@ -25520,6 +27841,12 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Tribuna",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Tribute Tech",
@@ -25679,6 +28006,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Truist Financial Services",
+      "industries": [
+        "Financial Services"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Truist Securities",
       "industries": [
         "Financial Services"
@@ -25701,6 +28036,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Trustee Corps",
+      "industries": [
+        "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 5
     },
     {
       "name": "Trustone Financial Credit Union",
@@ -25791,6 +28135,14 @@
       "attendee_count": 4
     },
     {
+      "name": "TURN BHS",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
+    },
+    {
       "name": "turnitin",
       "industries": [
         "Education"
@@ -25814,6 +28166,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "TwExtBio",
+      "industries": [
+        "Other",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
     },
     {
       "name": "Two Sigma",
@@ -25846,7 +28207,7 @@
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 8
+      "attendee_count": 11
     },
     {
       "name": "U.S. Department of State",
@@ -25957,6 +28318,15 @@
       "attendee_count": 1
     },
     {
+      "name": "UF T2 Center",
+      "industries": [
+        "Education",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "UHAUL International",
       "industries": [
         "Other"
@@ -26023,6 +28393,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Umergence.ai",
+      "industries": [
+        "Financial Services",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 3
+    },
+    {
       "name": "UNA Davis",
       "industries": [
         "Education",
@@ -26034,11 +28413,12 @@
     {
       "name": "UNC Charlotte",
       "industries": [
+        "Education",
         "Other",
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Uncommongoods",
@@ -26065,12 +28445,6 @@
       "industries": [
         "Other"
       ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "UniCredit",
-      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -26107,7 +28481,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 11
+      "attendee_count": 13
     },
     {
       "name": "United Methodist Communications",
@@ -26119,6 +28493,12 @@
       "attendee_count": 3
     },
     {
+      "name": "United Nations Corresponents Association",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "United Natural Foods, Inc.",
       "industries": [
         "Other"
@@ -26128,9 +28508,11 @@
     },
     {
       "name": "United States Air Force",
-      "industries": [],
+      "industries": [
+        "Government"
+      ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "United States Army Legal Services Agency",
@@ -26152,6 +28534,15 @@
       "name": "United Talent Agency",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "United Tribes Technical College",
+      "industries": [
+        "Education",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -26201,6 +28592,14 @@
       "name": "Universal Music Group",
       "industries": [
         "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Universidad de San Andrés",
+      "industries": [
+        "Education"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -26272,6 +28671,14 @@
       "attendee_count": 2
     },
     {
+      "name": "University of California, Riverside",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "University of Curaçao",
       "industries": [
         "Education",
@@ -26304,6 +28711,14 @@
       ],
       "fortune500": false,
       "attendee_count": 2
+    },
+    {
+      "name": "University of Georgia",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "University of Georgia, Terry College of Business",
@@ -26371,6 +28786,14 @@
       "attendee_count": 1
     },
     {
+      "name": "University of Maryland, Baltimore",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "University of Memphis",
       "industries": [
         "Education"
@@ -26393,7 +28816,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "University of Minnesota",
@@ -26436,6 +28859,14 @@
       "attendee_count": 4
     },
     {
+      "name": "University of Pittsburgh",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "University of Richmond",
       "industries": [
         "Education"
@@ -26468,9 +28899,26 @@
       "attendee_count": 1
     },
     {
+      "name": "University of Tennesee",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "university of tennesse Knoxville",
       "industries": [
         "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "University of Tennessee",
+      "industries": [
+        "Education",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -26481,7 +28929,7 @@
         "Education"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "University of Tennessse",
@@ -26498,7 +28946,15 @@
         "Education"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
+    },
+    {
+      "name": "University of Texas at Dallas - Center for BrainHealth",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 4
     },
     {
       "name": "University of the Cumberlands",
@@ -26605,7 +29061,7 @@
         "Insurance"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "uPerform",
@@ -26631,6 +29087,12 @@
       "industries": [],
       "fortune500": true,
       "attendee_count": 2
+    },
+    {
+      "name": "Upscale AI",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Upstream",
@@ -26681,9 +29143,25 @@
       "attendee_count": 1
     },
     {
+      "name": "US Dept. of the Air Force",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "US Government Accountability Office",
       "industries": [
         "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "US Signal",
+      "industries": [
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -26749,7 +29227,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 5
+      "attendee_count": 6
     },
     {
       "name": "USI Insurance Services",
@@ -26758,7 +29236,7 @@
         "Insurance"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 5
     },
     {
       "name": "USIC",
@@ -26798,7 +29276,16 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
+    },
+    {
+      "name": "Utah Associated Municipal Power Systems",
+      "industries": [
+        "Government",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Utah Tech University",
@@ -26873,6 +29360,12 @@
       "attendee_count": 1
     },
     {
+      "name": "VANITY VIP Magazine",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "VantageBP, LLC",
       "industries": [
         "Startups",
@@ -26922,7 +29415,21 @@
       "attendee_count": 1
     },
     {
+      "name": "VCA Canada",
+      "industries": [
+        "Healthcare"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Vegas Legal Magazine",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Vegas PBS",
       "industries": [],
       "fortune500": false,
       "attendee_count": 1
@@ -26978,6 +29485,15 @@
       "attendee_count": 5
     },
     {
+      "name": "Veraxsys",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Verc AI",
       "industries": [
         "Financial Services",
@@ -27023,10 +29539,11 @@
     {
       "name": "Veritiv",
       "industries": [
-        "Manufacturing"
+        "Manufacturing",
+        "Retail"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Verix AI",
@@ -27043,7 +29560,16 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 5
+      "attendee_count": 7
+    },
+    {
+      "name": "VersarAI",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Vertex Pharmaceuticals",
@@ -27088,7 +29614,9 @@
     {
       "name": "VF Corporation",
       "industries": [
-        "Retail"
+        "Other",
+        "Retail",
+        "Startups"
       ],
       "fortune500": true,
       "attendee_count": 2
@@ -27376,6 +29904,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Vodafone Idea",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Voice of America",
       "industries": [],
       "fortune500": false,
@@ -27439,6 +29975,14 @@
       "industries": [
         "Cybersecurity",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "VSP Vision",
+      "industries": [
+        "Insurance"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -27556,7 +30100,7 @@
         "Retail"
       ],
       "fortune500": true,
-      "attendee_count": 15
+      "attendee_count": 17
     },
     {
       "name": "Walt Disney Animation Studios",
@@ -27715,6 +30259,22 @@
       "attendee_count": 1
     },
     {
+      "name": "Waystar",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "WD",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "WeAreDevelopers",
       "industries": [
         "Startups",
@@ -27792,6 +30352,12 @@
       "attendee_count": 1
     },
     {
+      "name": "Wellington Management",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "wellright",
       "industries": [
         "Other",
@@ -27806,7 +30372,7 @@
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 13
+      "attendee_count": 14
     },
     {
       "name": "WellSpan Health",
@@ -27826,6 +30392,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Wentzville Police Department",
+      "industries": [
+        "Government",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Wesco",
       "industries": [
         "Retail"
@@ -27839,6 +30414,20 @@
         "Retail"
       ],
       "fortune500": true,
+      "attendee_count": 1
+    },
+    {
+      "name": "West Pharma",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Westar Digital, LLC",
+      "industries": [],
+      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -27867,6 +30456,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Western Digital",
+      "industries": [
+        "Technology"
+      ],
+      "fortune500": true,
+      "attendee_count": 1
+    },
+    {
       "name": "Western Governors University",
       "industries": [
         "Education",
@@ -27874,6 +30471,14 @@
       ],
       "fortune500": false,
       "attendee_count": 3
+    },
+    {
+      "name": "Western Piedmont Community College",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Western Reserve Area Agency on Aging",
@@ -27917,15 +30522,6 @@
       "attendee_count": 2
     },
     {
-      "name": "WGU",
-      "industries": [
-        "Healthcare",
-        "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "WGU Labs",
       "industries": [
         "Education",
@@ -27957,6 +30553,14 @@
       "industries": [
         "Financial Services",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "White Cap",
+      "industries": [
+        "Retail"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -28034,6 +30638,15 @@
       ],
       "fortune500": false,
       "attendee_count": 1
+    },
+    {
+      "name": "Wilmuth Solutions",
+      "industries": [
+        "Retail",
+        "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 2
     },
     {
       "name": "Wilson Bank and Trust",
@@ -28114,6 +30727,12 @@
       "attendee_count": 2
     },
     {
+      "name": "Women in AI",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Women in CyberSecurity (WiCyS)",
       "industries": [],
       "fortune500": false,
@@ -28173,7 +30792,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Workflow Autopilot",
@@ -28499,6 +31118,12 @@
       ],
       "fortune500": false,
       "attendee_count": 4
+    },
+    {
+      "name": "Zapier",
+      "industries": [],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "ZD Global Family Office",
