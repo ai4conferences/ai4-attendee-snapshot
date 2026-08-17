@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-10T14:55:37+00:00",
-  "total_companies": 5961,
-  "total_attendees": 10150,
+  "updated_at": "2026-08-17T14:24:07+00:00",
+  "total_companies": 5954,
+  "total_attendees": 10141,
   "industries": [
     "All Industries",
     "Automotive",
@@ -52,7 +52,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 3
     },
     {
       "name": "10Fold Communications",
@@ -3210,7 +3210,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Antero Resources",
+      "name": "Antero Resources Corporation",
       "industries": [
         "Other"
       ],
@@ -6329,12 +6329,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Blue Bird Corporation",
-      "industries": [],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "Blue Cross Blue Shield of Florida",
       "industries": [
         "Healthcare"
@@ -9124,7 +9118,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 3
     },
     {
       "name": "Cigna / Evernorth",
@@ -10303,7 +10297,7 @@
     {
       "name": "Collaborate Solutions",
       "industries": [
-        "Technology"
+        "Government"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -10543,7 +10537,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Common Sense Ideas LLC",
+      "name": "Common Sense Ideas",
       "industries": [
         "Startups",
         "Technology"
@@ -11819,7 +11813,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 21
+      "attendee_count": 20
     },
     {
       "name": "CVS Health | Health100",
@@ -15580,14 +15574,6 @@
     },
     {
       "name": "EWE AG",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Ex Marriott International",
       "industries": [
         "Other"
       ],
@@ -19820,14 +19806,6 @@
       ],
       "fortune500": false,
       "attendee_count": 2
-    },
-    {
-      "name": "H&M",
-      "industries": [
-        "Retail"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
     },
     {
       "name": "H&W Electrical Corp",
@@ -27297,12 +27275,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Mead Johnson Nutrition",
-      "industries": [],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "Measured Decision Ai",
       "industries": [
         "Other",
@@ -29806,15 +29778,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "NEC Corporation of America / NEC Solution Innovators",
-      "industries": [
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "NEC Solution Innovators, Ltd.",
@@ -36280,15 +36244,6 @@
       "name": "RGM Cyber Solutions",
       "industries": [
         "Cybersecurity",
-        "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Rhoda AI",
-      "industries": [
-        "Other",
         "Startups"
       ],
       "fortune500": false,
@@ -45694,15 +45649,6 @@
       "name": "Uncommongoods",
       "industries": [
         "Retail"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Uncovr.ai",
-      "industries": [
-        "Healthcare",
-        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
