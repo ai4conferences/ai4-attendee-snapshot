@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-17T14:24:07+00:00",
+  "updated_at": "2026-08-24T14:38:31+00:00",
   "total_companies": 5954,
-  "total_attendees": 10141,
+  "total_attendees": 10140,
   "industries": [
     "All Industries",
     "Automotive",
@@ -3676,6 +3676,14 @@
       "industries": [
         "Startups",
         "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "Ares Management",
+      "industries": [
+        "Financial Services"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -19141,15 +19149,6 @@
       ],
       "fortune500": false,
       "attendee_count": 2
-    },
-    {
-      "name": "Grace Pilates",
-      "industries": [
-        "Healthcare",
-        "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
     },
     {
       "name": "Gradient Health",
@@ -42790,7 +42789,7 @@
         "Insurance"
       ],
       "fortune500": true,
-      "attendee_count": 7
+      "attendee_count": 6
     },
     {
       "name": "The Cinematography Podcast (aka CinePod)",
