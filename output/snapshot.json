@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-24T14:38:31+00:00",
-  "total_companies": 5954,
-  "total_attendees": 10140,
+  "updated_at": "2026-09-07T18:35:27+00:00",
+  "total_companies": 5952,
+  "total_attendees": 10133,
   "industries": [
     "All Industries",
     "Automotive",
@@ -1752,7 +1752,6 @@
     {
       "name": "Aipersonic․com",
       "industries": [
-        "Startups",
         "Technology"
       ],
       "fortune500": false,
@@ -13647,7 +13646,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 8
+      "attendee_count": 7
     },
     {
       "name": "Dow Jones",
@@ -20898,10 +20897,10 @@
       "attendee_count": 1
     },
     {
-      "name": "Horus Recruiting",
+      "name": "Horus",
       "industries": [
-        "Other",
-        "Startups"
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -24261,12 +24260,6 @@
       "attendee_count": 1
     },
     {
-      "name": "KLAS-TV (Nexstar Media Group)",
-      "industries": [],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "KLAS/ Nexstar Media Group",
       "industries": [],
       "fortune500": false,
@@ -24739,7 +24732,7 @@
         "Manufacturing"
       ],
       "fortune500": false,
-      "attendee_count": 6
+      "attendee_count": 5
     },
     {
       "name": "Lachoge Boutique",
@@ -28686,7 +28679,7 @@
     {
       "name": "MOSH",
       "industries": [
-        "Other",
+        "Manufacturing",
         "Startups"
       ],
       "fortune500": false,
@@ -35368,8 +35361,8 @@
     {
       "name": "Rankin Investment Group",
       "industries": [
-        "Startups",
-        "Technology"
+        "Other",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -36590,7 +36583,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 8
+      "attendee_count": 7
     },
     {
       "name": "Rocket Pharmaceuticals",
@@ -40782,15 +40775,6 @@
       ],
       "fortune500": false,
       "attendee_count": 3
-    },
-    {
-      "name": "SUCCESS Magazine",
-      "industries": [
-        "Other",
-        "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
     },
     {
       "name": "Suffolk Construction",
@@ -45339,7 +45323,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 3
+      "attendee_count": 2
     },
     {
       "name": "UAB Vinted",
@@ -47798,7 +47782,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "Ville de Lévis",
