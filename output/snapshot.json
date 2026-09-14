@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-07T18:35:27+00:00",
-  "total_companies": 5952,
-  "total_attendees": 10133,
+  "updated_at": "2026-09-14T19:01:04+00:00",
+  "total_companies": 5951,
+  "total_attendees": 10129,
   "industries": [
     "All Industries",
     "Automotive",
@@ -6861,14 +6861,6 @@
       "attendee_count": 9
     },
     {
-      "name": "Braze",
-      "industries": [
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "Brazil Metaverse TV",
       "industries": [],
       "fortune500": false,
@@ -7902,7 +7894,7 @@
         "Healthcare"
       ],
       "fortune500": true,
-      "attendee_count": 4
+      "attendee_count": 3
     },
     {
       "name": "Cardinalhealth․com",
@@ -19025,7 +19017,7 @@
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 105
+      "attendee_count": 104
     },
     {
       "name": "Goolge",
@@ -19108,7 +19100,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Governor's Office of Business and Economic Development",
+      "name": "Governor’s Office of Economic Development",
       "industries": [
         "Government",
         "Startups"
@@ -20906,12 +20898,20 @@
       "attendee_count": 1
     },
     {
-      "name": "House of Commons Of  Canada",
+      "name": "House of Commons",
       "industries": [
         "Government"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
+    },
+    {
+      "name": "House of Commons of Canada",
+      "industries": [
+        "Government"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "Housing Resources of Western Colorado",
@@ -47775,14 +47775,6 @@
       ],
       "fortune500": false,
       "attendee_count": 3
-    },
-    {
-      "name": "Villara Corporation",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
     },
     {
       "name": "Ville de Lévis",
