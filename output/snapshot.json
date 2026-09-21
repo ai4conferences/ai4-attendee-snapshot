@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-14T19:01:04+00:00",
-  "total_companies": 5951,
-  "total_attendees": 10129,
+  "updated_at": "2026-09-21T19:03:10+00:00",
+  "total_companies": 5947,
+  "total_attendees": 10123,
   "industries": [
     "All Industries",
     "Automotive",
@@ -395,14 +395,13 @@
       "attendee_count": 1
     },
     {
-      "name": "8minute․ai",
+      "name": "8minute.ai",
       "industries": [
         "Education",
-        "Startups",
-        "Technology"
+        "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 1
     },
     {
       "name": "9507-6253 Québec Inc. (UltimateHub)",
@@ -1421,6 +1420,14 @@
       "industries": [
         "Other",
         "Startups"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
+      "name": "AGS",
+      "industries": [
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -2695,14 +2702,6 @@
         "Insurance"
       ],
       "fortune500": true,
-      "attendee_count": 1
-    },
-    {
-      "name": "American Gaming Systems",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": false,
       "attendee_count": 1
     },
     {
@@ -5614,14 +5613,6 @@
       "attendee_count": 2
     },
     {
-      "name": "Behind The Growth Podcast",
-      "industries": [
-        "Financial Services"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "Behr",
       "industries": [
         "Manufacturing"
@@ -8515,15 +8506,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Center for Cyber Diplomacy and International Security",
-      "industries": [
-        "Startups",
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "Center for Information Warfare",
       "industries": [
         "Government",
@@ -9144,7 +9126,7 @@
       "attendee_count": 1
     },
     {
-      "name": "CIJ World",
+      "name": "CIJ․World",
       "industries": [
         "Other",
         "Startups"
@@ -9425,7 +9407,7 @@
       "attendee_count": 1
     },
     {
-      "name": "City of San jose",
+      "name": "City of San Jose",
       "industries": [
         "Government"
       ],
@@ -20413,7 +20395,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Hera AI",
+      "name": "Hera IA inc",
       "industries": [
         "Automotive",
         "Startups"
@@ -24017,15 +23999,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Kennett Company",
-      "industries": [
-        "Other",
-        "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "KEPHART",
       "industries": [
         "Other",
@@ -27530,8 +27503,7 @@
     {
       "name": "Merck & Co., Inc.",
       "industries": [
-        "Healthcare",
-        "Startups"
+        "Healthcare"
       ],
       "fortune500": true,
       "attendee_count": 9
@@ -42352,13 +42324,14 @@
       "attendee_count": 2
     },
     {
-      "name": "TEST",
+      "name": "Test",
       "industries": [
+        "Other",
         "Startups",
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Test Rite Products",
@@ -43665,15 +43638,6 @@
       "name": "THK America",
       "industries": [
         "Manufacturing"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Thndr AI",
-      "industries": [
-        "Startups",
-        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
