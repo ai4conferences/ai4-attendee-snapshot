@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-21T19:03:10+00:00",
-  "total_companies": 5947,
+  "updated_at": "2026-09-28T20:22:49+00:00",
+  "total_companies": 5945,
   "total_attendees": 10123,
   "industries": [
     "All Industries",
@@ -2320,7 +2320,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "ALSAC ST JUDE",
@@ -4257,7 +4257,7 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "Atera",
@@ -7279,6 +7279,15 @@
       "attendee_count": 1
     },
     {
+      "name": "BVG & Company",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "BWBR",
       "industries": [
         "Other",
@@ -7799,14 +7808,6 @@
       "name": "Capella University",
       "industries": [
         "Education"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Capgemini Government Solutions",
-      "industries": [
-        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -9135,7 +9136,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Cimpress Group / Pixartprinting",
+      "name": "Cimpress Group - Pixartprinting",
       "industries": [
         "Manufacturing"
       ],
@@ -13145,7 +13146,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Digital Harbor Foundation Inc․",
+      "name": "Digital Harbor Foundation",
       "industries": [
         "Education",
         "Startups"
@@ -16658,7 +16659,7 @@
         "Financial Services"
       ],
       "fortune500": true,
-      "attendee_count": 2
+      "attendee_count": 3
     },
     {
       "name": "First Day Homecare",
@@ -22578,16 +22579,15 @@
         "Healthcare"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Intuitive Surgical",
       "industries": [
-        "Healthcare",
-        "Other"
+        "Healthcare"
       ],
       "fortune500": true,
-      "attendee_count": 4
+      "attendee_count": 3
     },
     {
       "name": "Intuitive․ai",
@@ -25648,13 +25648,12 @@
       "attendee_count": 1
     },
     {
-      "name": "LiquidPower Specialty Products Inc․",
+      "name": "LIQUIDPOWER SPECIALTY PRODUCTS INC.",
       "industries": [
-        "Other",
-        "Startups"
+        "Other"
       ],
       "fortune500": false,
-      "attendee_count": 3
+      "attendee_count": 4
     },
     {
       "name": "Listening Post AI",
@@ -26027,14 +26026,6 @@
       ],
       "fortune500": false,
       "attendee_count": 2
-    },
-    {
-      "name": "LSPI",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
     },
     {
       "name": "LSU",
@@ -29830,7 +29821,7 @@
     {
       "name": "Nestle",
       "industries": [
-        "Technology"
+        "Healthcare"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -29844,6 +29835,14 @@
       "attendee_count": 1
     },
     {
+      "name": "Nestle Nutrition and Health",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Nestle Purina",
       "industries": [
         "Manufacturing",
@@ -29851,14 +29850,6 @@
       ],
       "fortune500": false,
       "attendee_count": 10
-    },
-    {
-      "name": "Nestlé Nutrition and Health",
-      "industries": [
-        "Healthcare"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
     },
     {
       "name": "Net Influencer",
@@ -31712,10 +31703,9 @@
       "attendee_count": 1
     },
     {
-      "name": "Ontario Teachers' Pension Plan",
+      "name": "Ontario Teachers' Pension  Plan",
       "industries": [
-        "Financial Services",
-        "Other"
+        "Financial Services"
       ],
       "fortune500": false,
       "attendee_count": 5
@@ -33074,9 +33064,9 @@
       "attendee_count": 2
     },
     {
-      "name": "Per Scholas",
+      "name": "PER SCHOLAS",
       "industries": [
-        "Technology"
+        "Education"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -34695,7 +34685,7 @@
     {
       "name": "Purple",
       "industries": [
-        "Retail"
+        "Manufacturing"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -35961,7 +35951,7 @@
     {
       "name": "Renee Differ Inc",
       "industries": [
-        "Other",
+        "Financial Services",
         "Startups"
       ],
       "fortune500": false,
@@ -36075,9 +36065,9 @@
       "attendee_count": 1
     },
     {
-      "name": "Resonac America, Inc․",
+      "name": "Resonac America, Inc.",
       "industries": [
-        "Manufacturing"
+        "Automotive"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -38583,14 +38573,6 @@
       ],
       "fortune500": false,
       "attendee_count": 5
-    },
-    {
-      "name": "Silicon Valley Bank, a division of First Citizens Bank",
-      "industries": [
-        "Financial Services"
-      ],
-      "fortune500": true,
-      "attendee_count": 1
     },
     {
       "name": "Silmaril",
@@ -42146,7 +42128,7 @@
       "attendee_count": 1
     },
     {
-      "name": "TelevisaUnivision Inc",
+      "name": "TelevisaUnivision Inc.",
       "industries": [
         "Other"
       ],
@@ -48314,7 +48296,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Walmart Inc.",
+      "name": "Walmart Inc",
       "industries": [
         "Retail"
       ],
@@ -49790,7 +49772,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Zachry Industrial",
+      "name": "Zachry Group",
       "industries": [
         "Other"
       ],
