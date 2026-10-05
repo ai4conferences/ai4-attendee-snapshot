@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-28T20:22:49+00:00",
-  "total_companies": 5945,
-  "total_attendees": 10123,
+  "updated_at": "2026-10-05T21:26:45+00:00",
+  "total_companies": 5947,
+  "total_attendees": 10121,
   "industries": [
     "All Industries",
     "Automotive",
@@ -2462,14 +2462,13 @@
       "name": "Amazon",
       "industries": [
         "Cybersecurity",
-        "Financial Services",
         "Manufacturing",
         "Other",
         "Retail",
         "Technology"
       ],
       "fortune500": true,
-      "attendee_count": 47
+      "attendee_count": 46
     },
     {
       "name": "Amazon Lab126",
@@ -3070,7 +3069,7 @@
     {
       "name": "Anchor Loans, a Pretium Company",
       "industries": [
-        "Financial Services"
+        "Other"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -7856,15 +7855,6 @@
       "attendee_count": 1
     },
     {
-      "name": "Captjur & Captjur AI",
-      "industries": [
-        "Startups",
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "CAPTRUST",
       "industries": [
         "Financial Services"
@@ -8626,6 +8616,15 @@
       "attendee_count": 1
     },
     {
+      "name": "Cerebe",
+      "industries": [
+        "Startups",
+        "Technology"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Cerritos College",
       "industries": [
         "Education"
@@ -9075,7 +9074,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "CI&T",
@@ -14892,6 +14891,14 @@
       "attendee_count": 4
     },
     {
+      "name": "Energry Transfer",
+      "industries": [
+        "Other"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
+    },
+    {
       "name": "Energy CX",
       "industries": [
         "Other",
@@ -14906,7 +14913,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 5
+      "attendee_count": 4
     },
     {
       "name": "EnergyX",
@@ -17488,7 +17495,7 @@
         "Other"
       ],
       "fortune500": true,
-      "attendee_count": 9
+      "attendee_count": 10
     },
     {
       "name": "Freddie Mac Multifamily",
@@ -20463,13 +20470,20 @@
       "attendee_count": 2
     },
     {
-      "name": "HID Global",
+      "name": "HID",
       "industries": [
-        "Manufacturing",
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
+    },
+    {
+      "name": "HID Global",
+      "industries": [
+        "Manufacturing"
+      ],
+      "fortune500": false,
+      "attendee_count": 1
     },
     {
       "name": "HiddenLayer",
@@ -25067,8 +25081,8 @@
     {
       "name": "Lead to Learn",
       "industries": [
-        "Financial Services",
-        "Startups"
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -28430,13 +28444,13 @@
       "attendee_count": 2
     },
     {
-      "name": "momentiq ai",
+      "name": "Momentiq․AI",
       "industries": [
         "Startups",
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "Momentum Communications",
@@ -29882,7 +29896,7 @@
       "attendee_count": 2
     },
     {
-      "name": "Netflix, Inc․",
+      "name": "Netflix, Inc.",
       "industries": [
         "Financial Services",
         "Other"
