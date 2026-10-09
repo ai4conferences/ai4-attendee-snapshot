@@ -12,6 +12,8 @@
 
   let snapshot = null;
   let activeIndustry = SHOW_ALL_LABEL;
+  // Set by the SSR Worker when the company list is already in the HTML.
+  let reuseSsrList = root.hasAttribute("data-ssr") && listEl.children.length > 0;
 
   function render() {
     if (!snapshot) return;
@@ -26,6 +28,13 @@
     };
     const ordered = filtered.filter(function (c) { return c.fortune500; }).sort(cmp)
       .concat(filtered.filter(function (c) { return !c.fortune500; }).sort(cmp));
+
+    // First render after a server-rendered page: if the HTML already shows
+    // exactly this list, leave it alone (no flicker, no reflow).
+    if (reuseSsrList) {
+      reuseSsrList = false;
+      if (sameList(ordered)) return;
+    }
 
     listEl.innerHTML = "";
     if (!ordered.length) {
@@ -44,7 +53,20 @@
     listEl.appendChild(frag);
   }
 
+  function sameList(ordered) {
+    const items = listEl.children;
+    if (items.length !== ordered.length) return false;
+    // Compare with whitespace collapsed: HTML parsing turns "\r\n" in a
+    // name into "\n", so raw strings can differ while the text is the same.
+    const norm = function (s) { return String(s).replace(/\s+/g, " ").trim(); };
+    for (let i = 0; i < items.length; i++) {
+      if (norm(items[i].textContent) !== norm(ordered[i].name)) return false;
+    }
+    return true;
+  }
+
   function buildIndustryButtons(industries) {
+    toolbar.innerHTML = "";
     const labels = [SHOW_ALL_LABEL].concat(industries.filter(function (i) {
       return i !== SHOW_ALL_LABEL;
     }));
@@ -83,6 +105,9 @@
     })
     .catch(function (err) {
       console.error("ai4-snapshot:", err);
+      // Server-rendered list is still valid — keep showing it (filters just
+      // won't be available) instead of an error.
+      if (root.hasAttribute("data-ssr") && listEl.children.length > 0) return;
       root.dataset.state = "error";
       const errEl = root.querySelector(".ai4-error");
       if (errEl) errEl.textContent = "Couldn't load snapshot: " + err.message;
