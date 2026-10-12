@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-05T21:26:45+00:00",
-  "total_companies": 5947,
-  "total_attendees": 10121,
+  "updated_at": "2026-10-12T21:58:49+00:00",
+  "total_companies": 5942,
+  "total_attendees": 10118,
   "industries": [
     "All Industries",
     "Automotive",
@@ -1263,14 +1263,6 @@
       "attendee_count": 4
     },
     {
-      "name": "AG",
-      "industries": [
-        "Technology"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
       "name": "AGE Cyber Defense Solutions, LLC",
       "industries": [
         "Startups",
@@ -2196,7 +2188,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 8
+      "attendee_count": 9
     },
     {
       "name": "Allegro sp․ z o.o.",
@@ -2681,7 +2673,8 @@
     {
       "name": "American Express",
       "industries": [
-        "Financial Services"
+        "Financial Services",
+        "Technology"
       ],
       "fortune500": true,
       "attendee_count": 11
@@ -5435,7 +5428,7 @@
       "attendee_count": 2
     },
     {
-      "name": "Bay Street Integrity Realty Inc․",
+      "name": "Bay Street Integrity Realty Inc.",
       "industries": [
         "Other",
         "Startups"
@@ -6849,12 +6842,6 @@
       ],
       "fortune500": false,
       "attendee_count": 9
-    },
-    {
-      "name": "Brazil Metaverse TV",
-      "industries": [],
-      "fortune500": false,
-      "attendee_count": 1
     },
     {
       "name": "Bread Financial",
@@ -16860,6 +16847,14 @@
       "attendee_count": 1
     },
     {
+      "name": "FlexPoint & Florida Virtual School",
+      "industries": [
+        "Education"
+      ],
+      "fortune500": false,
+      "attendee_count": 4
+    },
+    {
       "name": "Flint Hills Consulting",
       "industries": [
         "Financial Services",
@@ -16956,15 +16951,7 @@
         "Education"
       ],
       "fortune500": false,
-      "attendee_count": 7
-    },
-    {
-      "name": "Florida Virtual School & FlexPoint Education",
-      "industries": [
-        "Education"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "Fluence",
@@ -19460,22 +19447,10 @@
       "attendee_count": 1
     },
     {
-      "name": "Groupe emd baitmo",
-      "industries": [
-        "Other",
-        "Startups"
-      ],
+      "name": "Groupe EMD Batimo",
+      "industries": [],
       "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Groupe EMD-Batimo inc",
-      "industries": [
-        "Other",
-        "Startups"
-      ],
-      "fortune500": false,
-      "attendee_count": 6
+      "attendee_count": 7
     },
     {
       "name": "Grow Financial Federal Credit Union",
@@ -22360,12 +22335,6 @@
       "industries": [
         "Other"
       ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Integration Developer News",
-      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
@@ -30362,7 +30331,6 @@
     {
       "name": "Nisum",
       "industries": [
-        "Startups",
         "Technology"
       ],
       "fortune500": false,
@@ -36710,8 +36678,7 @@
     {
       "name": "Rowan Appliance Inc",
       "industries": [
-        "Retail",
-        "Startups"
+        "Retail"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -40972,12 +40939,6 @@
         "Other",
         "Startups"
       ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Susquehanna",
-      "industries": [],
       "fortune500": false,
       "attendee_count": 1
     },
