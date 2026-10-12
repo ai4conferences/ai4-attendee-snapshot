@@ -1,0 +1,37 @@
+name = "ai4-attendee-snapshot-ssr"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# No secrets or KV needed: the Worker reads the public snapshot.json from
+# jsDelivr (edge-cached for 15 min) and keeps it in memory for 10 min.
+
+# ===== Staging (separate Worker, nothing touches production) =====
+# Runs in PREVIEW mode on its workers.dev URL — no DNS or routes needed:
+#   https://ai4-attendee-snapshot-ssr-staging.<your-subdomain>.workers.dev/who-attends/
+# proxies the LIVE ai4.com page and injects the company list. Everything is
+# noindex so it can't compete with ai4.com in search.
+[env.staging]
+name = "ai4-attendee-snapshot-ssr-staging"
+workers_dev = true
+
+[env.staging.vars]
+ORIGIN_OVERRIDE = "https://ai4.com"   # proxy the live WordPress site
+PAGE_PATH       = "/who-attends/"
+NOINDEX         = "true"
+# Load the block's JS from a branch instead of @main to test new JS before merging:
+PREVIEW_JS_REF  = "ssr-hydration"
+
+# ===== Production =====
+[env.production]
+name = "ai4-attendee-snapshot-ssr"
+# Only the site route is needed; this Worker has no API of its own.
+workers_dev = false
+# Unrecognised paths under this pattern pass straight through to WordPress.
+routes = [
+  { pattern = "ai4.com/who-attends*", zone_name = "ai4.com" },
+  { pattern = "www.ai4.com/who-attends*", zone_name = "ai4.com" },
+]
+
+[env.production.vars]
+PAGE_PATH   = "/who-attends/"
+SITE_ORIGIN = "https://ai4.com"
