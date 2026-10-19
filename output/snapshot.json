@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-12T21:58:49+00:00",
+  "updated_at": "2026-10-19T19:38:37+00:00",
   "total_companies": 5942,
-  "total_attendees": 10118,
+  "total_attendees": 10117,
   "industries": [
     "All Industries",
     "Automotive",
@@ -21032,7 +21032,7 @@
         "Technology"
       ],
       "fortune500": false,
-      "attendee_count": 6
+      "attendee_count": 5
     },
     {
       "name": "Huenei",
@@ -36678,7 +36678,8 @@
     {
       "name": "Rowan Appliance Inc",
       "industries": [
-        "Retail"
+        "Startups",
+        "Technology"
       ],
       "fortune500": false,
       "attendee_count": 1
@@ -41359,7 +41360,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Taiwan Cement Enterprise Group USA",
+      "name": "Taiwan Cement Enterprise Group USA (Manufacturing, Green Energy, LFP Battery)",
       "industries": [
         "Manufacturing"
       ],
