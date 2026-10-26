@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-19T19:38:37+00:00",
+  "updated_at": "2026-10-26T19:43:41+00:00",
   "total_companies": 5942,
-  "total_attendees": 10117,
+  "total_attendees": 10115,
   "industries": [
     "All Industries",
     "Automotive",
@@ -4034,13 +4034,13 @@
       "attendee_count": 2
     },
     {
-      "name": "AsembleAI LLC․",
+      "name": "Asembleai",
       "industries": [
         "Other",
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 2
+      "attendee_count": 1
     },
     {
       "name": "Ash Tree Hormone Health, PLLC",
@@ -22573,7 +22573,7 @@
       "attendee_count": 3
     },
     {
-      "name": "Intuitive․ai",
+      "name": "Intuitive.ai",
       "industries": [
         "Technology"
       ],
@@ -39288,7 +39288,7 @@
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 3
+      "attendee_count": 2
     },
     {
       "name": "Softmax",
