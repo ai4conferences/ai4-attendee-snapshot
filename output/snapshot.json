@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-10-26T19:43:41+00:00",
-  "total_companies": 5942,
-  "total_attendees": 10115,
+  "updated_at": "2026-11-02T22:35:59+00:00",
+  "total_companies": 5940,
+  "total_attendees": 10113,
   "industries": [
     "All Industries",
     "Automotive",
@@ -6529,14 +6529,6 @@
     },
     {
       "name": "Boehringer Ingelheim",
-      "industries": [
-        "Healthcare"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Boehringer Ingelheim - USA",
       "industries": [
         "Healthcare"
       ],
@@ -19323,7 +19315,7 @@
       "attendee_count": 1
     },
     {
-      "name": "GreenDart",
+      "name": "GreenDart Incorporated",
       "industries": [
         "Startups",
         "Technology"
@@ -21817,7 +21809,7 @@
       "attendee_count": 1
     },
     {
-      "name": "Indiana Public Retirement System",
+      "name": "Indiana Public Retirement System - INPRS",
       "industries": [
         "Government",
         "Startups"
@@ -26055,14 +26047,6 @@
     },
     {
       "name": "Lucky Eagle Casino & Hotel",
-      "industries": [
-        "Other"
-      ],
-      "fortune500": false,
-      "attendee_count": 1
-    },
-    {
-      "name": "Luiss University, l'Espresso magazine",
       "industries": [
         "Other"
       ],
@@ -38377,8 +38361,8 @@
     {
       "name": "Shopgen LLC",
       "industries": [
-        "Startups",
-        "Technology"
+        "Other",
+        "Startups"
       ],
       "fortune500": false,
       "attendee_count": 1
