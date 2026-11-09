@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T22:35:59+00:00",
+  "updated_at": "2026-11-09T23:17:27+00:00",
   "total_companies": 5940,
   "total_attendees": 10113,
   "industries": [
@@ -2412,10 +2412,11 @@
     {
       "name": "AMA",
       "industries": [
+        "Healthcare",
         "Other"
       ],
       "fortune500": false,
-      "attendee_count": 1
+      "attendee_count": 2
     },
     {
       "name": "Amaazon",
@@ -2753,7 +2754,7 @@
         "Startups"
       ],
       "fortune500": false,
-      "attendee_count": 5
+      "attendee_count": 4
     },
     {
       "name": "American Medical Association (AMA)",
@@ -22257,7 +22258,7 @@
     {
       "name": "Instacart",
       "industries": [
-        "Other",
+        "Retail",
         "Technology"
       ],
       "fortune500": false,
@@ -34467,7 +34468,7 @@
       "attendee_count": 6
     },
     {
-      "name": "Province of our lady of Guadalupe OFM",
+      "name": "Province of Our Lady Of Guadalupe, Inc.",
       "industries": [
         "Other"
       ],
