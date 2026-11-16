@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T23:17:27+00:00",
+  "updated_at": "2026-11-16T23:11:59+00:00",
   "total_companies": 5940,
   "total_attendees": 10113,
   "industries": [
@@ -36839,12 +36839,10 @@
       "attendee_count": 1
     },
     {
-      "name": "Ryder System Inc",
-      "industries": [
-        "Other"
-      ],
+      "name": "Ryder System, Inc.",
+      "industries": [],
       "fortune500": true,
-      "attendee_count": 1
+      "attendee_count": 4
     },
     {
       "name": "Ryder Systems Inc.",
@@ -36852,7 +36850,7 @@
         "Retail"
       ],
       "fortune500": false,
-      "attendee_count": 4
+      "attendee_count": 1
     },
     {
       "name": "S&P Global",
